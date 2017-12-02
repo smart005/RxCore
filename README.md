@@ -21,4 +21,5 @@ android项目开发基础框架：
 [javadoc文档](http://htmlpreview.github.io/?https://github.com/smart005/RxCore/blob/master/javadoc/index.html)
 
 ### 使用文档
+* [文件操作](/docs/file_operation.md)
 * [框架中greendao数据库使用](/docs/db_use.md)
