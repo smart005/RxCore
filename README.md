@@ -19,3 +19,6 @@ android项目开发基础框架：
 框架完整集成文档 <a href="https://github.com/smart005/okandroid">![images](https://img.shields.io/badge/OkAndroid-V1.x-brightgreen.svg)</a>
 
 [javadoc文档](http://htmlpreview.github.io/?https://github.com/smart005/RxCore/blob/master/javadoc/index.html)
+
+### 使用文档
+* [框架中greendao数据库使用](/docs/db_use.md)
