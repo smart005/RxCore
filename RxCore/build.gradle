@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        maven { url 'http://www.slcore.com:8081/nexus/content/groups/cloud-group/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+    }
+}
+allprojects {
+    repositories {
+        maven { url 'http://www.slcore.com:8081/nexus/content/groups/cloud-group/' }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
