@@ -21,5 +21,10 @@ android项目开发基础框架：
 [javadoc文档](http://htmlpreview.github.io/?https://github.com/smart005/RxCore/blob/master/javadoc/index.html)
 
 ### 使用文档
+* [ToastUtils工具类](/docs/toast_doc.md)
 * [文件操作](/docs/file_operation.md)
 * [框架中greendao数据库使用](/docs/db_use.md)
+* [OkRx网络框架]
+	* [验证工具类](/docs/network.md)
+	* [初始化配置](/docs/okrx_init.md)
+	* [使用方式](/docs/okrx_use.md)
