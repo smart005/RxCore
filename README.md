@@ -17,3 +17,5 @@ android项目开发基础框架：
 .....
 ```
 框架完整集成文档 <a href="https://github.com/smart005/okandroid">![images](https://img.shields.io/badge/OkAndroid-V1.x-brightgreen.svg)</a>
+
+<a href="https://github.com/smart005/RxCore/javadoc/index.html" target="_blank">[javadoc文档]</a>
