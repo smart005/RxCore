@@ -163,3 +163,22 @@ RetrofitParams requestOrderDetail(
 );
 //即接口返回若是201或500也做为成功处理;用户自行判断;
 ```
+###### 10.输出指定某一接口日志
+```java
+//在对应请求方式里将isPrintApiLog属性设置为true即可
+@POST(value = "相对url", isPrintApiLog = true)
+@DataParam(value = BaseBean.class)
+RetrofitParams payCode(
+        //参数...
+);
+```
+###### 11.Header、Headers使用
+```java
+@POST(value = "相对url")
+@Header(name = "token", value = "xxxxx")
+@Headers({"key1:value1", "key2:{value2}"})
+@DataParam(value = BaseBean.class)
+RetrofitParams payCode(
+        //参数...
+);
+```
