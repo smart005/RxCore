@@ -59,6 +59,8 @@ public class OkgoService extends BaseService {
             @Override
             public void onCallInfo(UnLoginCallInfo unLoginCallInfo) {
                 //根据初始化时设置的判断未登录的回调
+                //同时在登录页面onDestroy里需要设置以下值
+                //RxCache.setCacheFlag(this, Sys.START_LOGIN_KEY, false);
             }
         });
     }
