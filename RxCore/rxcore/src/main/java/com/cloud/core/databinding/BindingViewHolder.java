@@ -5,12 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/10/10
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/10/10
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class BindingViewHolder<BT extends ViewDataBinding> extends RecyclerView.ViewHolder {
 

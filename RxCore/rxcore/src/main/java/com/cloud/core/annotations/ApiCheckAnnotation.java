@@ -7,12 +7,12 @@ import java.lang.annotation.Target;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/8/19
- * @Description:接口请求验证
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/8/19
+ * Description:接口请求验证
+ * Modifier:
+ * ModifyContent:
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
@@ -20,42 +20,42 @@ public @interface ApiCheckAnnotation {
     /**
      * 网络验证,默认为false
      *
-     * @return true:已连接;false:未连接;
+     * return true:已连接;false:未连接;
      */
     boolean IsNetworkValid() default false;
 
     /**
      * token验证,默认为false;
      *
-     * @return true:自动取token值并传入;false:不传;
+     * return true:自动取token值并传入;false:不传;
      */
     boolean IsTokenValid() default false;
 
     /**
      * 是否缓存
      *
-     * @return
+     * return
      */
     boolean IsCache() default false;
 
     /**
      * 缓存时间
      *
-     * @return
+     * return
      */
     long CacheTime() default 0;
 
     /**
      * 缓存时间单位
      *
-     * @return
+     * return
      */
     TimeUnit CacheTimeUnit() default TimeUnit.SECONDS;
 
     /**
      * 缓存key
      *
-     * @return
+     * return
      */
     String CacheKey() default "859800517";
 }

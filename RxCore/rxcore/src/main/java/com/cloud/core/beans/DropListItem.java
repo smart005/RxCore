@@ -6,12 +6,12 @@ import com.cloud.core.utils.GlobalUtils;
 
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016-1-19 上午10:02:09
- * @Description: 下拉列表实体项
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016-1-19 上午10:02:09
+ * Description: 下拉列表实体项
+ * Modifier:
+ * ModifyContent:
  */
 public class DropListItem {
 
@@ -82,84 +82,84 @@ public class DropListItem {
     }
 
     /**
-     * @return 获取数据id
+     * return 获取数据id
      */
     public String getId() {
         return TextUtils.isEmpty(id) ? GlobalUtils.getGuidNoConnect() : id;
     }
 
     /**
-     * @param 设置数据id
+     * param 设置数据id
      */
     public void setId(String id) {
         this.id = id;
     }
 
     /**
-     * @return 获取显示名称
+     * return 获取显示名称
      */
     public String getDisplayName() {
         return displayName;
     }
 
     /**
-     * @param 设置显示名称
+     * param 设置显示名称
      */
     public void setDisplayName(String displayName) {
         this.displayName = displayName;
     }
 
     /**
-     * @return 获取int值
+     * return 获取int值
      */
     public int getIntValue() {
         return intValue;
     }
 
     /**
-     * @param 设置int值
+     * param 设置int值
      */
     public void setIntValue(int intValue) {
         this.intValue = intValue;
     }
 
     /**
-     * @return 获取字符串值
+     * return 获取字符串值
      */
     public String getStringValue() {
         return stringValue;
     }
 
     /**
-     * @param 设置字符串值
+     * param 设置字符串值
      */
     public void setStringValue(String stringValue) {
         this.stringValue = stringValue;
     }
 
     /**
-     * @return 获取对象值
+     * return 获取对象值
      */
     public Object getObjValue() {
         return objValue;
     }
 
     /**
-     * @param 设置对象值
+     * param 设置对象值
      */
     public void setObjValue(Object objValue) {
         this.objValue = objValue;
     }
 
     /**
-     * @return 获取是否选中
+     * return 获取是否选中
      */
     public boolean isChk() {
         return isChk;
     }
 
     /**
-     * @param 设置是否选中
+     * param 设置是否选中
      */
     public void setChk(boolean isChk) {
         this.isChk = isChk;

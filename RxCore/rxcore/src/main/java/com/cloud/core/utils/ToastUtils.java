@@ -12,9 +12,9 @@ public class ToastUtils {
     /**
      * 短时间显示Toast
      *
-     * @param context
-     * @param message
-     * @param yOffset
+     * param context
+     * param message
+     * param yOffset
      */
     public static void showShort(Context context, CharSequence message,
                                  int yOffset) {
@@ -37,8 +37,8 @@ public class ToastUtils {
     /**
      * 短时间显示Toast
      *
-     * @param context
-     * @param message
+     * param context
+     * param message
      */
     public static void showShort(Context context, CharSequence message) {
         showShort(context, message, -16);
@@ -47,9 +47,9 @@ public class ToastUtils {
     /**
      * 短时间显示Toast
      *
-     * @param context
-     * @param resId
-     * @param yOffset
+     * param context
+     * param resId
+     * param yOffset
      */
     public static void showShort(Context context, int resId, int yOffset) {
         if (toast == null) {
@@ -71,8 +71,8 @@ public class ToastUtils {
     /**
      * 短时间显示Toast
      *
-     * @param context
-     * @param resId
+     * param context
+     * param resId
      */
     public static void showShort(Context context, int resId) {
         showShort(context, resId, -16);
@@ -81,9 +81,9 @@ public class ToastUtils {
     /**
      * 长时间显示Toast
      *
-     * @param context
-     * @param message
-     * @param yOffset
+     * param context
+     * param message
+     * param yOffset
      */
     public static void showLong(Context context, CharSequence message,
                                 int yOffset) {
@@ -106,8 +106,8 @@ public class ToastUtils {
     /**
      * 长时间显示Toast
      *
-     * @param context
-     * @param message
+     * param context
+     * param message
      */
     public static void showLong(Context context, CharSequence message) {
         showLong(context, message, -16);
@@ -116,9 +116,9 @@ public class ToastUtils {
     /**
      * 长时间显示Toast
      *
-     * @param context
-     * @param resId
-     * @param yOffset
+     * param context
+     * param resId
+     * param yOffset
      */
     public static void showLong(Context context, int resId, int yOffset) {
         if (toast == null) {
@@ -140,8 +140,8 @@ public class ToastUtils {
     /**
      * 长时间显示Toast
      *
-     * @param context
-     * @param resId
+     * param context
+     * param resId
      */
     public static void showLong(Context context, int resId) {
         showLong(context, resId, -16);
@@ -150,10 +150,10 @@ public class ToastUtils {
     /**
      * 自定义显示Toast时间
      *
-     * @param context
-     * @param message
-     * @param duration
-     * @param yOffset
+     * param context
+     * param message
+     * param duration
+     * param yOffset
      */
     public static void show(Context context, CharSequence message,
                             int duration, int yOffset) {
@@ -171,9 +171,9 @@ public class ToastUtils {
     /**
      * 自定义显示Toast时间
      *
-     * @param context
-     * @param message
-     * @param duration
+     * param context
+     * param message
+     * param duration
      */
     public static void show(Context context, CharSequence message, int duration) {
         show(context, message, duration, -16);
@@ -182,10 +182,10 @@ public class ToastUtils {
     /**
      * 自定义显示Toast时间
      *
-     * @param context
-     * @param resId
-     * @param duration
-     * @param yOffset
+     * param context
+     * param resId
+     * param duration
+     * param yOffset
      */
     public static void show(Context context, int resId, int duration,
                             int yOffset) {
@@ -203,9 +203,9 @@ public class ToastUtils {
     /**
      * 自定义显示Toast时间
      *
-     * @param context
-     * @param resId
-     * @param duration
+     * param context
+     * param resId
+     * param duration
      */
     public static void show(Context context, int resId, int duration) {
         show(context, resId, duration, -16);

@@ -12,12 +12,12 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/28
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/28
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class BaseDataItem {
 

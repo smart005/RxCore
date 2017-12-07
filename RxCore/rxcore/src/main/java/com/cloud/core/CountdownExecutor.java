@@ -10,12 +10,12 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-7-23 下午10:50:56
- * @Description: 倒计时处理类
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-7-23 下午10:50:56
+ * Description: 倒计时处理类
+ * Modifier:
+ * ModifyContent:
  */
 public class CountdownExecutor<T> {
 
@@ -32,21 +32,21 @@ public class CountdownExecutor<T> {
     private T extras = null;
 
     /**
-     * @param 设置每次执行时间间隔 (以秒为单位)
+     * param 设置每次执行时间间隔 (以秒为单位)
      */
     public void setPeriod(long period) {
         this.period = period;
     }
 
     /**
-     * @param 设置倒计时总时间 (单位是秒)
+     * param 设置倒计时总时间 (单位是秒)
      */
     public void setCountdownTotalTime(int countdownTotalTime) {
         this.countdownTotalTime = countdownTotalTime;
     }
 
     /**
-     * @return 获取倒计时总时间
+     * return 获取倒计时总时间
      * (单位是秒)
      */
     public int getCountdownTotalTime() {
@@ -56,8 +56,8 @@ public class CountdownExecutor<T> {
     /**
      * 在倒计时启动之前执行
      *
-     * @param seconds 当前计时秒数
-     * @param extras  扩展数据
+     * param seconds 当前计时秒数
+     * param extras  扩展数据
      */
     protected void onPerExecutor(int seconds, T extras) {
 
@@ -66,8 +66,8 @@ public class CountdownExecutor<T> {
     /**
      * 在计时中执行
      *
-     * @param seconds 当前计时秒数
-     * @param extras  扩展数据
+     * param seconds 当前计时秒数
+     * param extras  扩展数据
      */
     protected void onDoingExecutor(int seconds, T extras) {
 
@@ -76,7 +76,7 @@ public class CountdownExecutor<T> {
     /**
      * 结束之后执行
      *
-     * @param extras 扩展数据
+     * param extras 扩展数据
      */
     protected void onPostExecutor(T extras) {
 
@@ -85,7 +85,7 @@ public class CountdownExecutor<T> {
     /**
      * 设置扩展数据
      *
-     * @param extras
+     * param extras
      */
     public void setExtras(T extras) {
         this.extras = extras;

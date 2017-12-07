@@ -7,152 +7,152 @@ public abstract class Logger {
 	/**
 	 * 打印DEBUG级别日志
 	 * 
-	 * @param messages
+	 * param messages
 	 *            , 可以输入如下格式的参数 key,value,key,value
-	 * @return void
+	 * return void
 	 */
 	public abstract void debug(String... messages);
 
 	/**
 	 * 打印DEBUG级别日志
 	 * 
-	 * @param message
-	 * @return void
+	 * param message
+	 * return void
 	 */
 	public abstract void debug(String message);
 
 	/**
 	 * 打印DEBUG级别日志
 	 * 
-	 * @param message
-	 * @param tr
-	 * @return void
+	 * param message
+	 * param tr
+	 * return void
 	 */
 	public abstract void debug(String message, Throwable tr);
 
 	/**
 	 * 打印INFO级别日志
 	 * 
-	 * @param messages
+	 * param messages
 	 *            , 可以输入如下格式的参数 key,value,key,value
-	 * @return void
+	 * return void
 	 */
 	public abstract void info(String... messages);
 
 	/**
 	 * 打印INFO级别日志
 	 * 
-	 * @param message
-	 * @return void
+	 * param message
+	 * return void
 	 */
 	public abstract void info(String message);
 
 	/**
 	 * 打印INFO级别日志
 	 * 
-	 * @param message
-	 * @param tr
-	 * @return void
+	 * param message
+	 * param tr
+	 * return void
 	 */
 	public abstract void info(String message, Throwable tr);
 
 	/**
 	 * 打印ERROR级别日志
 	 * 
-	 * @param message
-	 * @return void
+	 * param message
+	 * return void
 	 */
 	public abstract void error(String message);
 
 	/**
 	 * 打印ERROR级别日志
 	 * 
-	 * @param message
-	 * @return void
+	 * param message
+	 * return void
 	 */
 	public abstract void error(String... messages);
 
 	/**
 	 * 打印ERROR级别日志
 	 * 
-	 * @param message
-	 * @return void
+	 * param message
+	 * return void
 	 */
 	public abstract void error(Integer tags, String... messages);
 
 	/**
 	 * 打印ERROR级别日志
 	 * 
-	 * @param message
-	 * @param tr
-	 * @return void
+	 * param message
+	 * param tr
+	 * return void
 	 */
 	public abstract void error(String message, Throwable tr);
 
 	/**
 	 * 打印ERROR级别日志
 	 * 
-	 * @param tr
-	 * @param messages
-	 * @return void
+	 * param tr
+	 * param messages
+	 * return void
 	 */
 	public abstract void error(Throwable tr, String... messages);
 
 	/**
 	 * 打印ERROR级别日志
 	 * 
-	 * @param tags
-	 * @param tr
-	 * @param messages
+	 * param tags
+	 * param tr
+	 * param messages
 	 */
 	public abstract void error(Integer tags, Throwable tr, String... messages);
 
 	/**
 	 * 打印WARN级别日志
 	 * 
-	 * @param message
-	 * @return void
+	 * param message
+	 * return void
 	 */
 	public abstract void warn(String message);
 
 	/**
 	 * 打印WARN级别日志
 	 * 
-	 * @param message
-	 * @param tr
-	 * @return void
+	 * param message
+	 * param tr
+	 * return void
 	 */
 	public abstract void warn(String message, Throwable tr);
 
 	/**
 	 * DEBUG级别是否有效
 	 * 
-	 * @return
-	 * @return boolean
+	 * return
+	 * return boolean
 	 */
 	public abstract boolean isDebugEnabled();
 
 	/**
 	 * ERROR级别是否有效
 	 * 
-	 * @return
-	 * @return boolean
+	 * return
+	 * return boolean
 	 */
 	public abstract boolean isErrorEnabled();
 
 	/**
 	 * INFO级别是否有效
 	 * 
-	 * @return
-	 * @return boolean
+	 * return
+	 * return boolean
 	 */
 	public abstract boolean isInfoEnabled();
 
 	/**
 	 * WARN级别是否有效
 	 * 
-	 * @return
-	 * @return boolean
+	 * return
+	 * return boolean
 	 */
 	public abstract boolean isWarnEnabled();
 
@@ -167,9 +167,9 @@ public abstract class Logger {
 	/**
 	 * 数组转换成字符串
 	 * 
-	 * @param messages
+	 * param messages
 	 *            数组
-	 * @return
+	 * return
 	 */
 	public static String convertToStr(String... messages) {
 		if (messages == null) {
@@ -188,8 +188,8 @@ public abstract class Logger {
 	/**
 	 * 对象中的属性转换成字符串. 只将基本数据类型拼接成字符串。 主要用于打印bean对象, 不用于打印数组
 	 * 
-	 * @param obj
-	 * @return
+	 * param obj
+	 * return
 	 */
 	public static String convertToStr(Object obj) {
 		if (obj == null) {

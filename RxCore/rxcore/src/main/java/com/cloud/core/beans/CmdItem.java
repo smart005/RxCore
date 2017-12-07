@@ -35,7 +35,7 @@ public class CmdItem {
 	/**
 	 * 取唯一标识名
 	 * 
-	 * @return
+	 * return
 	 */
 	public String getCommandName() {
 		return this.actionname;
@@ -44,7 +44,7 @@ public class CmdItem {
 	/**
 	 * 设置唯一标识名
 	 * 
-	 * @param actionname
+	 * param actionname
 	 */
 	public void setCommandName(String actionname) {
 		this.actionname = actionname;
@@ -83,14 +83,14 @@ public class CmdItem {
 	}
 
 	/**
-	 * @return 获取isEnable
+	 * return 获取isEnable
 	 */
 	public boolean isEnable() {
 		return isEnable;
 	}
 
 	/**
-	 * @param 设置isEnable
+	 * param 设置isEnable
 	 */
 	public void setEnable(boolean isEnable) {
 		this.isEnable = isEnable;

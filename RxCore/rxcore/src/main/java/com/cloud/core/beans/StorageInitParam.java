@@ -1,12 +1,12 @@
 package com.cloud.core.beans;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/8/2
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/8/2
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class StorageInitParam {
     /**
@@ -88,7 +88,7 @@ public class StorageInitParam {
     /**
      * 设置app目录
      *
-     * @param appDir
+     * param appDir
      */
     public void setAppDir(String appDir) {
         this.appDir = appDir;
@@ -205,7 +205,7 @@ public class StorageInitParam {
     /**
      * 设置oss持久保存记录目录
      *
-     * @param ossRecord
+     * param ossRecord
      */
     public void setOssRecord(String ossRecord) {
         this.ossRecord = ossRecord;

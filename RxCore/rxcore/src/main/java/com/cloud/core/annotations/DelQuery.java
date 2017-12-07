@@ -7,12 +7,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/6
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/6
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 @Documented
 @Target(ElementType.PARAMETER)
@@ -23,7 +23,7 @@ public @interface DelQuery {
     /**
      * 若为true,则默认不添加此请求下的所有字段
      *
-     * @return
+     * return
      */
     boolean isRemoveEmptyValueField() default false;
 }

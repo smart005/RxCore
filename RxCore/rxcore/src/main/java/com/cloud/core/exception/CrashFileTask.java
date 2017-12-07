@@ -19,12 +19,12 @@ import java.lang.reflect.Field;
 import java.util.Properties;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-7-11 上午10:49:22
- * @Description: 缓存异常信息至文件
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-7-11 上午10:49:22
+ * Description: 缓存异常信息至文件
+ * Modifier:
+ * ModifyContent:
  */
 public class CrashFileTask {
 
@@ -93,7 +93,7 @@ public class CrashFileTask {
     /**
      * 收集程序崩溃的设备信息
      *
-     * @param ctx
+     * param ctx
      */
     private static Properties collectCrashDeviceInfo() {
         Properties mDeviceCrashInfo = new Properties();
@@ -115,8 +115,8 @@ public class CrashFileTask {
     /**
      * 获取错误信息
      *
-     * @param ex
-     * @return
+     * param ex
+     * return
      */
     private static String getCrashInfo(Throwable ex) {
         Writer info = new StringWriter();
@@ -138,9 +138,9 @@ public class CrashFileTask {
     /**
      * 保存日志
      *
-     * @param crashInfo        错误信息
-     * @param mDeviceCrashInfo 设置相关信息
-     * @param level            错误等级
+     * param crashInfo        错误信息
+     * param mDeviceCrashInfo 设置相关信息
+     * param level            错误等级
      */
     private static void saveToFile(String crashInfo,
                                    Properties mDeviceCrashInfo, LogLevel level) {

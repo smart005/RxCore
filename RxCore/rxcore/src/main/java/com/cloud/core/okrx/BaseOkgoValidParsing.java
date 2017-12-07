@@ -1,12 +1,10 @@
 package com.cloud.core.okrx;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.text.TextUtils;
 
 import com.cloud.core.Action;
 import com.cloud.core.ObjectJudge;
-import com.cloud.core.RxCoreUtils;
 import com.cloud.core.annotations.ApiCheckAnnotation;
 import com.cloud.core.annotations.BaseUrlTypeName;
 import com.cloud.core.annotations.DELETE;
@@ -25,10 +23,12 @@ import com.cloud.core.annotations.RetCodes;
 import com.cloud.core.annotations.UrlItem;
 import com.cloud.core.annotations.UrlItemKey;
 import com.cloud.core.beans.RetrofitParams;
-import com.cloud.core.config.RxConfig;
+import com.cloud.core.beans.UnLoginCallInfo;
+import com.cloud.core.cache.RxCache;
+import com.cloud.core.constants.Sys;
 import com.cloud.core.enums.RequestType;
 import com.cloud.core.enums.RuleParams;
-import com.cloud.core.utils.BaseRedirectUtils;
+import com.cloud.core.utils.JsonUtils;
 import com.cloud.core.utils.NetworkUtils;
 import com.cloud.core.utils.ValidUtils;
 
@@ -43,12 +43,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/7
- * @Description:okgo请求验证
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/7
+ * Description:okgo请求验证
+ * Modifier:
+ * ModifyContent:
  */
 public class BaseOkgoValidParsing {
 
@@ -118,11 +118,20 @@ public class BaseOkgoValidParsing {
                                         if (t.getBaseSubscriber().START_LOGIN_TIME_STMPT == 0 || ((currtime - t.getBaseSubscriber().START_LOGIN_TIME_STMPT) > 3000)) {
                                             if (context != null) {
                                                 t.getBaseSubscriber().START_LOGIN_TIME_STMPT = currtime;
-                                                RxConfig config = RxCoreUtils.getInstance().getConfig(context);
-                                                Bundle bundle = new Bundle();
-                                                bundle.putBoolean(config.getStartLoginFlagKey(), true);
-                                                bundle.putString(config.getApiConfig().getApiName(), invokeMethodName);
-                                                BaseRedirectUtils.sendBroadcast(context, bundle);
+
+                                                boolean loginFlag = RxCache.getCacheFlag(context, Sys.START_LOGIN_KEY);
+                                                if (!loginFlag) {
+                                                    RxCache.setCacheFlag(context, Sys.START_LOGIN_KEY, true);
+                                                    //请求token api请求中的token清空
+                                                    t.setToken("");
+                                                    OnUnLoginCallInfoListener onUnLoginCallInfoListener = t.getBaseSubscriber().getOnUnLoginCallInfoListener();
+                                                    if (onUnLoginCallInfoListener != null) {
+                                                        UnLoginCallInfo callInfo = new UnLoginCallInfo();
+                                                        callInfo.setApiName(t.getApiName());
+                                                        callInfo.setResponse(JsonUtils.toStr(t));
+                                                        onUnLoginCallInfoListener.onCallInfo(callInfo);
+                                                    }
+                                                }
                                             }
                                         }
                                         validParam.setFlag(false);
@@ -158,8 +167,8 @@ public class BaseOkgoValidParsing {
 
     /**
      * 获取调用方法名
-     *
-     * @return
+     * <p>
+     * return
      */
     public static String getInvokingMethodName() {
         Exception exception = new Exception();

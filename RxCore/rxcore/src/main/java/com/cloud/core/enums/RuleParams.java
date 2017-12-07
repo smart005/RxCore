@@ -1,12 +1,12 @@
 package com.cloud.core.enums;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-6-15 上午10:08:16
- * @Description:验证规则
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-6-15 上午10:08:16
+ * Description:验证规则
+ * Modifier:
+ * ModifyContent:
  */
 public enum RuleParams {
 
@@ -31,8 +31,8 @@ public enum RuleParams {
      */
     Url("^(http|https|file)://[/]?(([\\w-]+\\.)+)?[\\w-]+(/[\\w-./?%&=,@!~`#$%^&*,./]*)?$"),
     /**
-     * 匹配指定标记及属性值(开始结束标签必须配对)<br/>
-     * {0}、{1}、{2}分别代表标签、属性名、属性值<br/>
+     * 匹配指定标记及属性值(开始结束标签必须配对)
+     * {0}、{1}、{2}分别代表标签、属性名、属性值
      * 内容名称:text
      */
     MatchThisTagAndAttr(

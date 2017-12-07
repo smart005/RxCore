@@ -12,12 +12,12 @@ import com.cloud.core.logger.Logger;
 import com.cloud.core.utils.PixelUtils;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/12
- * @Description: 仿朋友圈文本描述视图
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/12
+ * Description: 仿朋友圈文本描述视图
+ * Modifier:
+ * ModifyContent:
  */
 public class IntroView extends RelativeLayout {
 
@@ -58,7 +58,7 @@ public class IntroView extends RelativeLayout {
     /**
      * intro view properties
      *
-     * @param properties
+     * param properties
      */
     public void setIntroViewProperties(IntroViewProperties properties) {
         this.introViewProperties = properties == null ? new IntroViewProperties() : properties;
@@ -71,7 +71,7 @@ public class IntroView extends RelativeLayout {
     /**
      * 设置intro文本
      *
-     * @param text
+     * param text
      */
     public void setText(CharSequence text) {
         if (text == null) {
@@ -91,7 +91,7 @@ public class IntroView extends RelativeLayout {
     /**
      * 标记文本(默认-详情)
      *
-     * @param text
+     * param text
      */
     public void setTagText(CharSequence text) {
         if (text == null) {

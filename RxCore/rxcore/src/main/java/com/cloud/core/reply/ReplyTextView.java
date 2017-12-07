@@ -17,25 +17,6 @@ import android.widget.TextView;
 import com.cloud.core.enums.ReplyLinkTarget;
 import com.cloud.core.logger.Logger;
 
-/**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/12
- * @Description: 回复文本视图(from 回复 to :content);若to为空则显示from内容(from :content);
- * <p/>
- * ReplyTextView commentRtv = new ReplyTextView(this);
- * commentRtv.setTextColor(this.getResources().getColor(R.color.reply_content_color));
- * commentRtv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 12);
- * commentRtv.setFrom("from");
- * commentRtv.setTo("to");
- * commentRtv.setOnReplyLinkClickListener(new ReplyLinkClickListener<T>() {
- * @Override public void onReplyLinkClick(T obj, ReplyLinkTarget replyLinkTarget) {
- * <p/>
- * }
- * });
- * commentRtv.setText(commentRtv.getContent("content", object));
- * layoutRow.addView(commentRtv);
- */
 public class ReplyTextView extends TextView {
 
     /**
@@ -43,7 +24,7 @@ public class ReplyTextView extends TextView {
      */
     private String from = "";
     /**
-     * @回复人
+     * 回复人
      */
     private String to = "";
     /**
@@ -79,8 +60,8 @@ public class ReplyTextView extends TextView {
 
     /**
      * 设置当前回复人
-     *
-     * @param from
+     * <p>
+     * param from
      */
     public void setFrom(String from) {
         this.from = from;
@@ -88,8 +69,8 @@ public class ReplyTextView extends TextView {
 
     /**
      * 设置@回复人
-     *
-     * @param to
+     * <p>
+     * param to
      */
     public void setTo(String to) {
         this.to = to;
@@ -97,8 +78,8 @@ public class ReplyTextView extends TextView {
 
     /**
      * 设置链接文本颜色(默认#576b95)
-     *
-     * @param linkColor
+     * <p>
+     * param linkColor
      */
     public void setLinkColor(String linkColor) {
         this.linkColor = linkColor;
@@ -110,8 +91,8 @@ public class ReplyTextView extends TextView {
 
     /**
      * 获取回复内容
-     *
-     * @param content
+     * <p>
+     * param content
      */
     public <T> SpannableStringBuilder getContent(String content, T obj) {
         SpannableStringBuilder ssb = new SpannableStringBuilder();

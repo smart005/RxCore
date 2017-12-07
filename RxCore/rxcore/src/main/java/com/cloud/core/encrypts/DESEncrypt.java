@@ -12,12 +12,12 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/7/1
- * @Description:DES加减密
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/7/1
+ * Description:DES加减密
+ * Modifier:
+ * ModifyContent:
  */
 public class DESEncrypt {
 
@@ -26,10 +26,10 @@ public class DESEncrypt {
     /**
      * DES算法，加密
      *
-     * @param data 待加密字符串
-     * @param key  加密私钥，长度不能够小于8位
-     * @return 加密后的字节数组，一般结合Base64编码使用
-     * @throws CryptException 异常
+     * param data 待加密字符串
+     * param key  加密私钥，长度不能够小于8位
+     * return 加密后的字节数组，一般结合Base64编码使用
+     * throws CryptException 异常
      */
     public static String encode(String key, String data) {
         return encode(key, data.getBytes());
@@ -38,10 +38,10 @@ public class DESEncrypt {
     /**
      * DES算法，加密
      *
-     * @param data 待加密字符串
-     * @param key  加密私钥，长度不能够小于8位
-     * @return 加密后的字节数组，一般结合Base64编码使用
-     * @throws CryptException 异常
+     * param data 待加密字符串
+     * param key  加密私钥，长度不能够小于8位
+     * return 加密后的字节数组，一般结合Base64编码使用
+     * throws CryptException 异常
      */
     private static String encode(String key, byte[] data) {
         try {
@@ -64,10 +64,10 @@ public class DESEncrypt {
     /**
      * DES算法，解密
      *
-     * @param data 待解密字符串
-     * @param key  解密私钥，长度不能够小于8位
-     * @return 解密后的字节数组
-     * @throws Exception 异常
+     * param data 待解密字符串
+     * param key  解密私钥，长度不能够小于8位
+     * return 解密后的字节数组
+     * throws Exception 异常
      */
     private static byte[] decode(String key, byte[] data) {
         try {
@@ -90,10 +90,10 @@ public class DESEncrypt {
     /**
      * 获取编码后的值
      *
-     * @param key
-     * @param data
-     * @return
-     * @throws Exception
+     * param key
+     * param data
+     * return
+     * throws Exception
      */
     public static String decode(String key, String data) {
         byte[] datas;

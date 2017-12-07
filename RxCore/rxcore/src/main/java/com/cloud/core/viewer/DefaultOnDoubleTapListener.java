@@ -7,8 +7,6 @@ import android.widget.ImageView;
 
 /**
  * Provided default implementation of GestureDetector.OnDoubleTapListener, to be overriden with custom behavior, if needed
- * <p>&nbsp;</p>
- * To be used via {@link uk.co.senab.photoview.PhotoViewAttacher#setOnDoubleTapListener(GestureDetector.OnDoubleTapListener)}
  */
 public class DefaultOnDoubleTapListener implements GestureDetector.OnDoubleTapListener {
 
@@ -17,7 +15,7 @@ public class DefaultOnDoubleTapListener implements GestureDetector.OnDoubleTapLi
     /**
      * Default constructor
      *
-     * @param photoViewAttacher PhotoViewAttacher to bind to
+     * param photoViewAttacher PhotoViewAttacher to bind to
      */
     public DefaultOnDoubleTapListener(PhotoViewAttacher photoViewAttacher) {
         setPhotoViewAttacher(photoViewAttacher);
@@ -25,8 +23,8 @@ public class DefaultOnDoubleTapListener implements GestureDetector.OnDoubleTapLi
 
     /**
      * Allows to change PhotoViewAttacher within range of single instance
-     *
-     * @param newPhotoViewAttacher PhotoViewAttacher to bind to
+     * <p>
+     * param newPhotoViewAttacher PhotoViewAttacher to bind to
      */
     public void setPhotoViewAttacher(PhotoViewAttacher newPhotoViewAttacher) {
         this.photoViewAttacher = newPhotoViewAttacher;
@@ -55,7 +53,7 @@ public class DefaultOnDoubleTapListener implements GestureDetector.OnDoubleTapLi
 
                     photoViewAttacher.getOnPhotoTapListener().onPhotoTap(imageView, xResult, yResult);
                     return true;
-                }else{
+                } else {
                     photoViewAttacher.getOnPhotoTapListener().onOutsidePhotoTap();
                 }
             }

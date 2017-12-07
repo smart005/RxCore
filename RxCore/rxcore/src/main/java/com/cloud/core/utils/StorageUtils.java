@@ -45,7 +45,7 @@ public class StorageUtils {
     /**
      * sd卡目录下，创建应用主目录
      *
-     * @return
+     * return
      */
     private static File getApp() {
         if (ObjectJudge.hasSDCard()) {
@@ -65,8 +65,8 @@ public class StorageUtils {
     /**
      * 获取{@link StorageInitParam}目录下的子目录 如果不存在，则自动创建
      *
-     * @param dirname
-     * @return
+     * param dirname
+     * return
      */
     private static File getDir(String dirname) {
         return createDirectory(getApp(), dirname);
@@ -75,7 +75,7 @@ public class StorageUtils {
     /**
      * 获取图片目录
      *
-     * @return
+     * return
      */
     public static File getImageDir() {
         if (!initParam()) {
@@ -87,7 +87,7 @@ public class StorageUtils {
     /**
      * 获取下载目录
      *
-     * @return
+     * return
      */
     public static File getDownloadDir() {
         if (!initParam()) {
@@ -99,7 +99,7 @@ public class StorageUtils {
     /**
      * 获取音频文件目录
      *
-     * @return
+     * return
      */
     public static File getAudioDir() {
         if (!initParam()) {
@@ -111,7 +111,7 @@ public class StorageUtils {
     /**
      * 获取视频文件目录
      *
-     * @return
+     * return
      */
     public static File getVideoDir() {
         if (!initParam()) {
@@ -123,7 +123,7 @@ public class StorageUtils {
     /**
      * 获取错误日志目录
      *
-     * @return
+     * return
      */
     public static File getErrorDir() {
         if (!initParam()) {
@@ -135,7 +135,7 @@ public class StorageUtils {
     /**
      * 获取Debug日志目录
      *
-     * @return
+     * return
      */
     public static File getDebugDir() {
         if (!initParam()) {
@@ -147,7 +147,7 @@ public class StorageUtils {
     /**
      * 获取Info日志目录
      *
-     * @return
+     * return
      */
     public static File getInfoDir() {
         if (!initParam()) {
@@ -159,7 +159,7 @@ public class StorageUtils {
     /**
      * 获取警告类日志目录
      *
-     * @return
+     * return
      */
     public static File getWarningDir() {
         if (!initParam()) {
@@ -171,7 +171,7 @@ public class StorageUtils {
     /**
      * 获取插件目录
      *
-     * @return
+     * return
      */
     public static File getPluginDir() {
         if (!initParam()) {
@@ -183,7 +183,7 @@ public class StorageUtils {
     /**
      * 获取程序更新目录
      *
-     * @return
+     * return
      */
     public static File getApksDir() {
         if (!initParam()) {
@@ -195,7 +195,7 @@ public class StorageUtils {
     /**
      * 获取程序缓存目录
      *
-     * @return
+     * return
      */
     public static File getCachesDir() {
         if (!initParam()) {
@@ -207,7 +207,7 @@ public class StorageUtils {
     /**
      * 获取程序数据缓存目录
      *
-     * @return
+     * return
      */
     public static File getDataCachesDir() {
         if (!initParam()) {
@@ -219,7 +219,7 @@ public class StorageUtils {
     /**
      * 获取二维码目录
      *
-     * @return
+     * return
      */
     public static File getQRCodeDir() {
         if (!initParam()) {
@@ -231,7 +231,7 @@ public class StorageUtils {
     /**
      * 获取插件目录
      *
-     * @return
+     * return
      */
     public static File getApatchDir() {
         if (!initParam()) {
@@ -243,7 +243,7 @@ public class StorageUtils {
     /**
      * 获取待处理目录
      *
-     * @return
+     * return
      */
     public static File getTobeProcessed() {
         if (!initParam()) {
@@ -253,7 +253,7 @@ public class StorageUtils {
     }
 
     /**
-     * @return
+     * return
      */
     public static File getOssRecord() {
         if (!initParam()) {
@@ -265,9 +265,9 @@ public class StorageUtils {
     /**
      * 创建目录
      *
-     * @param dir  主目录
-     * @param dest 需要创建的子目录
-     * @return
+     * param dir  主目录
+     * param dest 需要创建的子目录
+     * return
      */
     public static File createDirectory(File dir, String dest) {
         File result = new File(dir, File.separator + dest + File.separator);
@@ -280,10 +280,10 @@ public class StorageUtils {
     /**
      * 创建文件
      *
-     * @param dir    主目录
-     * @param name   文件名称
-     * @param delete 如果存在是否删除原文件重新创建
-     * @return
+     * param dir    主目录
+     * param name   文件名称
+     * param delete 如果存在是否删除原文件重新创建
+     * return
      */
     public static File createFile(File dir, String name, boolean delete) {
         if (dir != null && !dir.exists()) {
@@ -308,8 +308,8 @@ public class StorageUtils {
     /**
      * 删除目录或者文件
      *
-     * @param filepath 文件路径
-     * @return
+     * param filepath 文件路径
+     * return
      */
     public static boolean deleteQuietly(String filePath) {
         File file = new File(filePath);
@@ -319,9 +319,9 @@ public class StorageUtils {
     /**
      * 删除目录或者文件
      *
-     * @param dir      主目录
-     * @param filepath 文件名称
-     * @return
+     * param dir      主目录
+     * param filepath 文件名称
+     * return
      */
     public static boolean deleteQuietly(String dir, String fileName) {
         File file = new File(dir, fileName);
@@ -331,8 +331,8 @@ public class StorageUtils {
     /**
      * 删除目录或者文件。 目录则递归删除， 文件直接删除
      *
-     * @param file
-     * @return
+     * param file
+     * return
      */
     public static boolean deleteQuietly(File file) {
         if (file == null) {
@@ -355,7 +355,7 @@ public class StorageUtils {
     /**
      * 删除目录中的文件及目录 支持递归删除 删除目录本身
      *
-     * @param directory
+     * param directory
      */
     public static void deleteDirectory(File directory) {
         if (!directory.exists()) {
@@ -370,7 +370,7 @@ public class StorageUtils {
     /**
      * 递归删除目录中的目录或者文件 不删除目录本身
      *
-     * @param directory
+     * param directory
      */
     public static void cleanDirectory(File directory) {
         if (!directory.exists() || !directory.isDirectory()) {
@@ -388,7 +388,7 @@ public class StorageUtils {
     /**
      * 递归删除目录中的目录或者文件 删除目录本身
      *
-     * @param file 目录或文件
+     * param file 目录或文件
      */
     public static void forceDelete(File file) {
         if (file.isDirectory()) {
@@ -404,9 +404,9 @@ public class StorageUtils {
     /**
      * 是否符号链接判断
      *
-     * @param file
-     * @return
-     * @throws IOException
+     * param file
+     * return
+     * throws IOException
      */
     private static boolean isSymlink(File file) {
         try {
@@ -438,8 +438,8 @@ public class StorageUtils {
     /**
      * copy文件
      *
-     * @param fromFile
-     * @param toFile
+     * param fromFile
+     * param toFile
      */
     public static void copyFiles(String fromFile, String toFile) {
         // 要复制的文件目录
@@ -544,8 +544,8 @@ public class StorageUtils {
     /**
      * 获取文件(一般指文本文件)内容
      *
-     * @param targetfile 目标文件
-     * @return 内容
+     * param targetfile 目标文件
+     * return 内容
      */
     public static String readContent(File targetfile) {
         try {
@@ -587,9 +587,9 @@ public class StorageUtils {
     /**
      * 从assets取文本文件内容
      *
-     * @param context
-     * @param fileName 文件名称
-     * @return
+     * param context
+     * param fileName 文件名称
+     * return
      */
     public static String readAssetsFileContent(Context context, String fileName) {
         try {
@@ -613,10 +613,10 @@ public class StorageUtils {
     /**
      * 保存Bitmap
      *
-     * @param dir      目录
-     * @param filename 文件名
-     * @param bt       图片
-     * @return
+     * param dir      目录
+     * param filename 文件名
+     * param bt       图片
+     * return
      */
     public static File saveBitmap(File dir, String filename, Bitmap bt) {
         try {
@@ -639,8 +639,8 @@ public class StorageUtils {
     /**
      * 获取文件或目录大小(单位为字节)
      *
-     * @param fileOrDirPath 文件或目录
-     * @return
+     * param fileOrDirPath 文件或目录
+     * return
      */
     public static long getFileOrDirSize(File fileOrDirPath) {
         return getFolderSize(fileOrDirPath);
@@ -649,8 +649,8 @@ public class StorageUtils {
     /**
      * 获取文件或目录大小(单位为字节)
      *
-     * @param fileOrDirPath 文件或目录
-     * @return
+     * param fileOrDirPath 文件或目录
+     * return
      */
     public static long getFileOrDirSize(String fileOrDirPath) {
         File file = new File(fileOrDirPath);

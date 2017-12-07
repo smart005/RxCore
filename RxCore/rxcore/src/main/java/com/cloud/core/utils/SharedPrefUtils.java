@@ -1,8 +1,8 @@
 /**
- * @Title: SharedPrefUtils.java
- * @Description: SharedPreferences 工具类
- * @author: lijinghuan
- * @data: 2015-1-22 下午4:21:00
+ * Title: SharedPrefUtils.java
+ * Description: SharedPreferences 工具类
+ * author: lijinghuan
+ * data: 2015-1-22 下午4:21:00
  */
 package com.cloud.core.utils;
 

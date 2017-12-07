@@ -9,12 +9,12 @@ import android.widget.RelativeLayout;
 import android.widget.Scroller;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/5
- * @Description:滑动加载或销毁视图
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/5
+ * Description:滑动加载或销毁视图
+ * Modifier:
+ * ModifyContent:
  */
 public class SildingLoadFinishView extends RelativeLayout {
     /**
@@ -131,7 +131,7 @@ public class SildingLoadFinishView extends RelativeLayout {
     /**
      * 设置OnSildingFinishListener, 在onSildingFinish()方法中finish Activity
      *
-     * @param onSildingFinishListener
+     * param onSildingFinishListener
      */
     public void setOnSildingFinishListener(
             OnSildingFinishListener onSildingFinishListener) {

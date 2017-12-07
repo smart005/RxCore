@@ -10,12 +10,12 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-11-6 上午12:00:32
- * @Description: 剪头向上正三角形
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-11-6 上午12:00:32
+ * Description: 剪头向上正三角形
+ * Modifier:
+ * ModifyContent:
  */
 public class JustTriangleUp extends View {
 

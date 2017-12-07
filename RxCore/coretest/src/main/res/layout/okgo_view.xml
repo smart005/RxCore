@@ -2,12 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#ffffff"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/annotation_btn"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="注解" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/annotation_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注解"
+            android:visibility="visible" />
+    </LinearLayout>
+
 </LinearLayout>

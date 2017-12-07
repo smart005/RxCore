@@ -13,12 +13,12 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 
 /**
- * @Author Gs
- * @Email:gs_12@foxmail.com
- * @CreateTime:2017/6/1
- * @Description: OkGo基础
- * @Modifier:
- * @ModifyContent:
+ * Author Gs
+ * Email:gs_12@foxmail.com
+ * CreateTime:2017/6/1
+ * Description: OkGo基础
+ * Modifier:
+ * ModifyContent:
  */
 
 public class OkRxBase {

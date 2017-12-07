@@ -124,14 +124,14 @@ public class DeviceInfo {
 	}
 
 	/**
-	 * @return 获取本机mac地址
+	 * return 获取本机mac地址
 	 */
 	public String getMac() {
 		return mac;
 	}
 
 	/**
-	 * @param 设置本机mac地址
+	 * param 设置本机mac地址
 	 */
 	public void setMac(String mac) {
 		this.mac = mac;

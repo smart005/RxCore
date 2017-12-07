@@ -26,12 +26,12 @@ import com.cloud.core.logger.Logger;
 import com.cloud.core.utils.PixelUtils;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-6-19 上午10:54:50
- * @Description: 菜单式dialog工具类
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-6-19 上午10:54:50
+ * Description: 菜单式dialog工具类
+ * Modifier:
+ * ModifyContent:
  */
 public class BaseUpwardDialog extends PopupWindow {
 

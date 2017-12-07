@@ -7,12 +7,12 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/7/16
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/7/16
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class AESEncrypt {
     private static AESEncrypt instance = null;

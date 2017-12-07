@@ -11,12 +11,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-6-15 上午10:16:18
- * @Description: 验证处理
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-6-15 上午10:16:18
+ * Description: 验证处理
+ * Modifier:
+ * ModifyContent:
  */
 public class ValidUtils {
 
@@ -52,9 +52,9 @@ public class ValidUtils {
     /**
      * 验证接口服务
      *
-     * @param service
-     * @param <T>
-     * @return true:是接口服务且接口数大于1;false:不是接口服务或接口数等于0;
+     * param service
+     * param <T>
+     * return true:是接口服务且接口数大于1;false:不是接口服务或接口数等于0;
      */
     public static <T> boolean validateServiceInterface(Class<T> service) {
         if (!service.isInterface()) {

@@ -1,12 +1,12 @@
 package com.cloud.core.utils;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/11/2
- * @Description:停留时间
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/11/2
+ * Description:停留时间
+ * Modifier:
+ * ModifyContent:
  */
 
 public class ResidenceTimeUtils {
@@ -21,7 +21,7 @@ public class ResidenceTimeUtils {
 
     public interface OnResidenceTimeCallback {
         /**
-         * @param timeRemaining 剩余时间
+         * param timeRemaining 剩余时间
          */
         public void onTimeRemainingCallback(int timeRemaining);
     }
@@ -35,8 +35,8 @@ public class ResidenceTimeUtils {
     /**
      * 设置停留时间监听
      *
-     * @param totalResidenceTime 总的停留时间
-     * @param callback           回调处理
+     * param totalResidenceTime 总的停留时间
+     * param callback           回调处理
      */
     public void setOnResidenceTimeListener(long totalResidenceTime, OnResidenceTimeCallback callback) {
         if (totalResidenceTime > 0) {
@@ -59,7 +59,7 @@ public class ResidenceTimeUtils {
     /**
      * 设置停留时间监听
      *
-     * @param callback 回调处理
+     * param callback 回调处理
      */
     public void setOnResidenceTimeListener(OnResidenceTimeCallback callback) {
         setOnResidenceTimeListener(0, callback);

@@ -23,10 +23,10 @@ public class PixelUtils {
 	/**
 	 * 将px值转换为sp值
 	 * 
-	 * @param pxValue
-	 * @param fontScale
+	 * param pxValue
+	 * param fontScale
 	 *            （DisplayMetrics类中属性scaledDensity）
-	 * @return
+	 * return
 	 */
 	public static int px2sp(Context context, float pxValue) {
 		float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
@@ -36,10 +36,10 @@ public class PixelUtils {
 	/**
 	 * 将sp值转换为px值
 	 * 
-	 * @param spValue
-	 * @param fontScale
+	 * param spValue
+	 * param fontScale
 	 *            （DisplayMetrics类中属性scaledDensity）
-	 * @return
+	 * return
 	 */
 	public static int sp2px(Context context, float spValue) {
 		float fontScale = context.getResources().getDisplayMetrics().scaledDensity;

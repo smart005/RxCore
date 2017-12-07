@@ -8,12 +8,12 @@ import org.greenrobot.greendao.annotation.Index;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/28
- * @Description:缓存数据项
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/28
+ * Description:缓存数据项
+ * Modifier:
+ * ModifyContent:
  */
 @Entity(nameInDb = "rx_cache_data")
 public class CacheDataItem {
@@ -79,7 +79,7 @@ public class CacheDataItem {
     /**
      * 设置缓存键
      *
-     * @param key
+     * param key
      */
     public void setKey(String key) {
         this.key = key;
@@ -98,7 +98,7 @@ public class CacheDataItem {
     /**
      * 设置缓存值
      *
-     * @param value
+     * param value
      */
     public void setValue(String value) {
         this.value = value;
@@ -114,7 +114,7 @@ public class CacheDataItem {
     /**
      * 设置到期时间(缓存时间+时间段)
      *
-     * @param effective
+     * param effective
      */
     public void setEffective(long effective) {
         this.effective = effective;
@@ -130,7 +130,7 @@ public class CacheDataItem {
     /**
      * 设置状态
      *
-     * @param flag
+     * param flag
      */
     public void setFlag(boolean flag) {
         this.flag = flag;
@@ -146,7 +146,7 @@ public class CacheDataItem {
     /**
      * 设置int值
      *
-     * @param iniValue
+     * param iniValue
      */
     public void setIniValue(int iniValue) {
         this.iniValue = iniValue;
@@ -162,7 +162,7 @@ public class CacheDataItem {
     /**
      * 设置long值
      *
-     * @param longValue
+     * param longValue
      */
     public void setLongValue(long longValue) {
         this.longValue = longValue;

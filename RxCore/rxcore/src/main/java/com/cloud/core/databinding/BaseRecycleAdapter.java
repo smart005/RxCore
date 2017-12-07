@@ -13,12 +13,12 @@ import java.util.List;
 
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/10/10
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/10/10
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 
 public class BaseRecycleAdapter<T, BT extends ViewDataBinding> extends RecyclerView.Adapter<BindingViewHolder<BT>> {

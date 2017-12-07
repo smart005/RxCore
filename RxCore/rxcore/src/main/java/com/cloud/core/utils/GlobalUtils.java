@@ -1,8 +1,8 @@
 /**
- * @Title: GlobalUtils.java
- * @Description: 基础工具类
- * @author: lijinghuan
- * @data: 2015-1-14 上午10:53:51
+ * Title: GlobalUtils.java
+ * Description: 基础工具类
+ * author: lijinghuan
+ * data: 2015-1-14 上午10:53:51
  */
 package com.cloud.core.utils;
 
@@ -136,7 +136,7 @@ public class GlobalUtils {
     /**
      * 获取guid
      *
-     * @return
+     * return
      */
     public static String getNewGuid() {
         UUID uuid = UUID.randomUUID();
@@ -245,7 +245,7 @@ public class GlobalUtils {
     /**
      * 显示软键盘
      *
-     * @param editText 键盘显示定位的EditText
+     * param editText 键盘显示定位的EditText
      */
     public static void showSoftInput(Context context, EditText editText) {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -255,7 +255,7 @@ public class GlobalUtils {
     /**
      * 字符串反转
      *
-     * @param content 要处理的内容
+     * param content 要处理的内容
      */
     public static String reverse(String content) {
         if (TextUtils.isEmpty(content)) {
@@ -272,11 +272,11 @@ public class GlobalUtils {
     /**
      * 根据资源名称获取id
      *
-     * @param context      上下文
-     * @param resouceType  资源类型
-     * @param resourceName 资源名称
-     * @param packageName  获取资源的包名
-     * @return
+     * param context      上下文
+     * param resouceType  资源类型
+     * param resourceName 资源名称
+     * param packageName  获取资源的包名
+     * return
      */
     public static int getIdByResourceName(Context context, ResouceType resouceType,
                                           String resourceName, String packageName) {
@@ -296,9 +296,9 @@ public class GlobalUtils {
     /**
      * 获取资源uri
      *
-     * @param packageName 包名
-     * @param resId       资源id
-     * @return
+     * param packageName 包名
+     * param resId       资源id
+     * return
      */
     public static Uri getResourceUri(String packageName, int resId) {
         return Uri.parse("android.resource://" + packageName + "/" + resId);
@@ -307,8 +307,8 @@ public class GlobalUtils {
     /**
      * 获取域名
      *
-     * @param url url地址
-     * @return
+     * param url url地址
+     * return
      */
     public static String getDomainName(String url) {
         if (TextUtils.isEmpty(url)) {
@@ -329,8 +329,8 @@ public class GlobalUtils {
     /**
      * 获得屏幕宽度
      *
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static int getScreenWidth(Context context) {
         WindowManager wm = ObjectManager.getWindowManager(context);
@@ -342,8 +342,8 @@ public class GlobalUtils {
     /**
      * 获得屏幕高度
      *
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static int getScreenHeight(Context context) {
         WindowManager wm = ObjectManager.getWindowManager(context);
@@ -386,7 +386,7 @@ public class GlobalUtils {
     /**
      * 显示通知栏异常
      *
-     * @param context
+     * param context
      */
     public void showNotification(Context context) {
         try {

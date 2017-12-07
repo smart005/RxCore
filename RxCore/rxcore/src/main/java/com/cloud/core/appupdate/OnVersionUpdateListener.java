@@ -8,7 +8,7 @@ public interface OnVersionUpdateListener {
 	/**
 	 * 版本更新
 	 * 
-	 * @param appinfo
+	 * param appinfo
 	 *            更新应用信息
 	 */
 	public void versionUpdate(ApkInfo appinfo, boolean isCompulsoryUpdate);
@@ -21,14 +21,14 @@ public interface OnVersionUpdateListener {
 	/**
 	 * 更新完成
 	 * 
-	 * @return void
+	 * return void
 	 */
 	public void updateComplated();
 
 	/**
 	 * 稍候更新
 	 * 
-	 * @return void
+	 * return void
 	 */
 	public void laterUpdateListener();
 
@@ -40,14 +40,14 @@ public interface OnVersionUpdateListener {
 	/**
 	 * 初始化加载对象
 	 * 
-	 * @return
+	 * return
 	 */
 	public MaskLoading onInitLoadingObject();
 
 	/**
 	 * 开始加载提示监听
 	 * 
-	 * @param text
+	 * param text
 	 */
 	public void onBeginLoadingPromptListener(String text);
 

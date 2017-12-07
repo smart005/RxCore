@@ -2,12 +2,12 @@ package com.cloud.core.beans;
 
 /**
  * 
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-6-19 下午1:46:32
- * @Description: BaseMenuDialog实体项
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-6-19 下午1:46:32
+ * Description: BaseMenuDialog实体项
+ * Modifier:
+ * ModifyContent:
  * 
  */
 public class MenuDialogItem {

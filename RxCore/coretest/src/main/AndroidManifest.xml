@@ -39,7 +39,8 @@
         android:name="com.cloud.coretest.TestApplication"
         android:allowBackup="true"
         android:label="@string/app_name"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/defaultTheme">
         <activity android:name="com.cloud.coretest.OkRxTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

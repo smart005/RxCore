@@ -15,12 +15,12 @@ import java.util.List;
 
 
 /**
- * @Author Gs
- * @Email:gs_12@foxmail.com
- * @CreateTime:2017/3/9
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author Gs
+ * Email:gs_12@foxmail.com
+ * CreateTime:2017/3/9
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 
 public class BaseListAdapter<T, BT extends ViewDataBinding> extends BaseAdapter {

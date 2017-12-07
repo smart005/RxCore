@@ -18,12 +18,12 @@ import com.cloud.core.enums.ReplyLinkTarget;
 import com.cloud.core.logger.Logger;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/13
- * @Description:回复链接列表
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/13
+ * Description:回复链接列表
+ * Modifier:
+ * ModifyContent:
  */
 public class ReplyLinksView extends TextView {
 
@@ -52,7 +52,7 @@ public class ReplyLinksView extends TextView {
     /**
      * 设置链接文本颜色(默认#576b95)
      *
-     * @param linkColor
+     * param linkColor
      */
     public void setLinkColor(String linkColor) {
         if (!TextUtils.isEmpty(linkColor)) {

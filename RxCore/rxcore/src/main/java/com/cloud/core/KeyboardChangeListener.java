@@ -6,12 +6,12 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/20
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/20
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class KeyboardChangeListener implements ViewTreeObserver.OnGlobalLayoutListener {
     private View mContentView;
@@ -23,8 +23,8 @@ public class KeyboardChangeListener implements ViewTreeObserver.OnGlobalLayoutLi
         /**
          * call back
          *
-         * @param isShow         true is show else hidden
-         * @param keyboardHeight keyboard height
+         * param isShow         true is show else hidden
+         * param keyboardHeight keyboard height
          */
         void onKeyboardChange(boolean isShow, int keyboardHeight);
     }

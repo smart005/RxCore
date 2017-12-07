@@ -54,8 +54,8 @@ public class LGImgCompressor {
     /**
      * 通过uri地址获取文件路径
      *
-     * @param uri
-     * @return
+     * param uri
+     * return
      */
     private String getFilePathFromUri(String uri) {
         Uri pathUri = Uri.parse(uri);
@@ -74,11 +74,11 @@ public class LGImgCompressor {
     /**
      * Can't compress a recycled bitmap
      *
-     * @param srcImageUri 原始图片的uri路径
-     * @param outWidth    期望的输出图片的宽度
-     * @param outHeight   期望的输出图片的高度
-     * @param maxFileSize 期望的输出图片的最大占用的存储空间
-     * @return
+     * param srcImageUri 原始图片的uri路径
+     * param outWidth    期望的输出图片的宽度
+     * param outHeight   期望的输出图片的高度
+     * param maxFileSize 期望的输出图片的最大占用的存储空间
+     * return
      */
     public String compressImage(String srcImageUri, int outWidth, int outHeight, int maxFileSize) {
         String srcImagePath = getFilePathFromUri(srcImageUri);

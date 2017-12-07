@@ -31,7 +31,7 @@ public class BaseLoading {
 	/**
 	 * LoadingType类型为MASK_LOADING时用此构造函数
 	 * 
-	 * @param theme
+	 * param theme
 	 *            mask loading theme
 	 */
 	public BaseLoading(int theme) {
@@ -41,7 +41,7 @@ public class BaseLoading {
 	/**
 	 * 设置loading组件资源;目前LoadingType类型为MASK_LOADING时需设置此资源,其它可不设置;
 	 * 
-	 * @param lres
+	 * param lres
 	 */
 	public void setLoadingResource(LoadingRes lres) {
 		this.lres = lres;
@@ -50,17 +50,17 @@ public class BaseLoading {
 	/**
 	 * show loading
 	 * 
-	 * @param context
-	 * @param type
+	 * param context
+	 * param type
 	 *            LoadingType类型;
-	 * @param smallloadingcontainer
+	 * param smallloadingcontainer
 	 *            LoadingType类型为SMALL_LOADING时需输入承载的容器,否则可为null;
-	 * @param tipinfo
+	 * param tipinfo
 	 *            LoadingType类型为MASK_LOADING时需输入的提示内容,否则可为空;
-	 * @param mlalign
+	 * param mlalign
 	 *            LoadingType类型为MASK_LOADING时需输入相应的检举类型,否则输入MaskLoadingAlign.
 	 *            DEFAULT;
-	 * @param hasloading
+	 * param hasloading
 	 *            LoadingType类型为MASK_LOADING时有效,否则此变量不起作用;
 	 */
 	public void show(Context context, LoadingType type,
@@ -95,7 +95,7 @@ public class BaseLoading {
 	/**
 	 * 销毁或禁用 loading 视图
 	 * 
-	 * @param smallloadingcontainer
+	 * param smallloadingcontainer
 	 *            LoadingType类型为SMALL_LOADING时需输入承载的容器,否则可为null;
 	 */
 	public void dismiss(LoadingType type, ViewGroup smallloadingcontainer) {

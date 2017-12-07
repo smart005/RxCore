@@ -1,8 +1,8 @@
 /**
- * @Title: BaseRedirectUtils.java
- * @Description:
- * @author: lijinghuan
- * @data: 2015年5月4日 下午8:31:13
+ * Title: BaseRedirectUtils.java
+ * Description:
+ * author: lijinghuan
+ * data: 2015年5月4日 下午8:31:13
  */
 package com.cloud.core.utils;
 
@@ -14,12 +14,19 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.cloud.core.ObjectJudge;
-import com.cloud.core.RxCoreUtils;
-import com.cloud.core.config.RxConfig;
+import com.cloud.core.configs.BaseCConfig;
+import com.cloud.core.configs.RxCoreConfigItems;
 
 public class BaseRedirectUtils {
 
+    /**
+     * 启动服务
+     *
+     * @param context 上下文
+     * @param cls     需要启动的服务类
+     * @param action  启动服务action,接收时传回
+     * @param bundle  服务启动时传入的数据bundle
+     */
     public static void startService(Context context, Class<?> cls, String action, Bundle bundle) {
         Intent _intent = new Intent();
         if (!TextUtils.isEmpty(action)) {
@@ -32,34 +39,80 @@ public class BaseRedirectUtils {
         context.startService(_intent);
     }
 
+    /**
+     * 启动服务
+     *
+     * @param context 上下文
+     * @param cls     需要启动的服务类
+     * @param action  启动服务action,接收时传回
+     */
     public static void startService(Context context, Class<?> cls, String action) {
         startService(context, cls, action, null);
     }
 
+    /**
+     * 启动服务
+     *
+     * @param context 上下文
+     * @param cls     需要启动的服务类
+     * @param bundle  服务启动时传入的数据bundle
+     */
     public static void startService(Context context, Class<?> cls, Bundle bundle) {
         startService(context, cls, "", bundle);
     }
 
+    /**
+     * 启动服务
+     *
+     * @param context 上下文
+     * @param cls     需要启动的服务类
+     */
     public static void startService(Context context, Class<?> cls) {
         startService(context, cls, "", null);
     }
 
+    /**
+     * 停止服务
+     *
+     * @param context 上下文
+     * @param cls     要停止的服务类
+     */
     public static void stopService(Context context, Class<?> cls) {
         Intent _intent = new Intent();
         _intent.setClass(context, cls);
         context.stopService(_intent);
     }
 
+    /**
+     * 绑定服务
+     *
+     * @param context 上下文
+     * @param conn    服务连接器
+     * @param action
+     */
     public static void bindService(Context context, ServiceConnection conn,
                                    String action) {
         Intent _intent = new Intent(action);
         context.bindService(_intent, conn, Context.BIND_AUTO_CREATE);
     }
 
+    /**
+     * 取消服务绑定
+     *
+     * @param context 上下文
+     * @param conn    服务连接器
+     */
     public static void unbindService(Context context, ServiceConnection conn) {
         context.unbindService(conn);
     }
 
+    /**
+     * 启动activity
+     *
+     * @param activity 提供上下文的activity
+     * @param cls      要启动类对象
+     * @param bundle   传入的bundle数据
+     */
     public static void startActivity(Activity activity, Class<?> cls, Bundle bundle) {
         Intent _intent = new Intent();
         _intent.setClass(activity, cls);
@@ -69,7 +122,18 @@ public class BaseRedirectUtils {
         activity.startActivity(_intent);
     }
 
-    public static void startActivityForResult(Activity activity, Class<?> cls, Bundle bundle, int requestCode) {
+    /**
+     * 以result方式启动activity
+     *
+     * @param activity    提供上下文的activity
+     * @param cls         要启动类对象
+     * @param bundle      传入的bundle数据
+     * @param requestCode 回调onActivityResult时传回的requestCode
+     */
+    public static void startActivityForResult(Activity activity,
+                                              Class<?> cls,
+                                              Bundle bundle,
+                                              int requestCode) {
         Intent _intent = new Intent();
         _intent.setClass(activity, cls);
         if (bundle != null) {
@@ -79,14 +143,11 @@ public class BaseRedirectUtils {
     }
 
     /**
-     * 启动Activity
+     * 启动activity
      *
-     * @param activity         当前Activity
-     * @param classPackageName 需要启动类对应的包名
-     * @param classFullName    需要启动类全称
-     * @param bundle
-     * @param enterAnim        进入动画
-     * @param exitAnim         退出动画
+     * @param activity      提供上下文的activity
+     * @param classFullName activity全路径类名
+     * @param bundle        传入的bundle数据
      */
     public static void startActivity(Activity activity, String classFullName, Bundle bundle) {
         if (activity == null || TextUtils.isEmpty(classFullName)) {
@@ -102,12 +163,11 @@ public class BaseRedirectUtils {
     }
 
     /**
-     * 启动Activity
+     * 启动activity
      *
-     * @param activity         当前Activity
-     * @param classPackageName 需要启动类对应的包名
-     * @param classFullName    需要启动类全称
-     * @param bundle
+     * @param context       上下文
+     * @param classFullName activity全路径类名
+     * @param bundle        传入的bundle数据
      */
     public static void startActivity(Context context, String classFullName, Bundle bundle) {
         if (context == null || TextUtils.isEmpty(classFullName)) {
@@ -123,17 +183,17 @@ public class BaseRedirectUtils {
     }
 
     /**
-     * 启动Activity
+     * 以result方式启动activity
      *
-     * @param activity         当前Activity
-     * @param classPackageName 需要启动类对应的包名
-     * @param classFullName    需要启动类全称
-     * @param bundle
-     * @param requestCode
-     * @param enterAnim        进入动画
-     * @param exitAnim         退出动画
+     * @param activity    提供上下文的activity
+     * @param cls         activity全路径类名
+     * @param bundle      传入的bundle数据
+     * @param requestCode 回调onActivityResult时传回的requestCode
      */
-    public static void startActivityForResult(Activity activity, String classFullName, Bundle bundle, int requestCode) {
+    public static void startActivityForResult(Activity activity,
+                                              String classFullName,
+                                              Bundle bundle,
+                                              int requestCode) {
         if (activity == null || TextUtils.isEmpty(classFullName)) {
             return;
         }
@@ -146,12 +206,27 @@ public class BaseRedirectUtils {
         activity.startActivityForResult(_intent, requestCode);
     }
 
+    /**
+     * 结束当前activity
+     *
+     * @param activity 提供上下文的activity
+     */
     public static void finishActivity(Activity activity) {
         activity.finish();
     }
 
-    public static void sendBroadcast(Context context, String action,
-                                     String permission, Bundle bundle) {
+    /**
+     * 发送广播
+     *
+     * @param context    上下文
+     * @param action     接收广播时通过action来判断来源
+     * @param permission 广播发送与接收权限
+     * @param bundle     传入的bundle数据
+     */
+    public static void sendBroadcast(Context context,
+                                     String action,
+                                     String permission,
+                                     Bundle bundle) {
         Intent intent = new Intent(action);
         if (bundle != null) {
             intent.putExtras(bundle);
@@ -163,27 +238,37 @@ public class BaseRedirectUtils {
         }
     }
 
-    public static void sendBroadcast(Context context, String action,
+    /**
+     * 发送广播
+     *
+     * @param context 上下文
+     * @param action  接收广播时通过action来判断来源
+     * @param bundle  传入的bundle数据
+     */
+    public static void sendBroadcast(Context context,
+                                     String action,
                                      Bundle bundle) {
         sendBroadcast(context, action, "", bundle);
     }
 
+    /**
+     * 发送广播
+     * 通过此方式发送的广播，action在框架初始化时设置
+     *
+     * @param context 上下文
+     * @param bundle  传入的bundle数据
+     */
     public static void sendBroadcast(Context context, Bundle bundle) {
-        RxConfig config = RxCoreUtils.getInstance().getConfig(context);
-        sendBroadcast(context, config.getRscReceiveAction(), bundle);
+        RxCoreConfigItems configItems = BaseCConfig.getInstance().getConfigItems(context);
+        sendBroadcast(context, configItems.getReceiveAction(), bundle);
     }
 
-    public static <T> void sendBroadcast(Context context, String action,
-                                         T... params) {
-        if (ObjectJudge.isNullOrEmpty(params)) {
-            return;
-        }
-        Bundle mbundle = new Bundle();
-        String jsondata = JsonUtils.toStr(params);
-        mbundle.putString("RECEIVE_DATA", jsondata);
-        sendBroadcast(context, action, "", mbundle);
-    }
-
+    /**
+     * 调起通话界面
+     *
+     * @param context     上下文
+     * @param phonenumber 电话号码
+     */
     public static void callTel(Context context, String phonenumber) {
         Intent intent = null;
         if (TextUtils.isEmpty(phonenumber)) {
@@ -201,7 +286,7 @@ public class BaseRedirectUtils {
     /**
      * 启动桌面
      *
-     * @param context
+     * @param context 上下文
      */
     public static void startHome(Context context) {
         Intent home = new Intent(Intent.ACTION_MAIN);
@@ -213,12 +298,14 @@ public class BaseRedirectUtils {
     /**
      * 判断某个Activity是否存在
      *
-     * @param context
-     * @param packageName
-     * @param className
-     * @return
+     * @param context     上下文
+     * @param packageName 包名
+     * @param className   要判断activity的类名
+     * @return true:存在;false:不存在;
      */
-    public boolean isActivityExist(Context context, String packageName, String className) {
+    public boolean isActivityExist(Context context,
+                                   String packageName,
+                                   String className) {
         Intent intent = new Intent();
         intent.setClassName(packageName, className);
         if (context.getPackageManager().resolveActivity(intent, 0) == null) {

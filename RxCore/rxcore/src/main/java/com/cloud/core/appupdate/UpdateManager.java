@@ -9,7 +9,7 @@ public class UpdateManager {
 	private InstanceUpdateServiceInfoEntity miusinfo = new InstanceUpdateServiceInfoEntity();
 
 	/**
-	 * @param 设置miusinfo
+	 * param 设置miusinfo
 	 */
 	public void setMiusinfo(InstanceUpdateServiceInfoEntity miusinfo) {
 		this.miusinfo = miusinfo;

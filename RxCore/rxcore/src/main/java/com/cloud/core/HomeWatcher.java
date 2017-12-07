@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.content.IntentFilter;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/1/17
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/1/17
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class HomeWatcher {
     static final String TAG = "HomeWatcher";
@@ -35,7 +35,7 @@ public class HomeWatcher {
     /**
      * 设置监听
      *
-     * @param listener
+     * param listener
      */
     public void setOnHomePressedListener(OnHomePressedListener listener) {
         mListener = listener;

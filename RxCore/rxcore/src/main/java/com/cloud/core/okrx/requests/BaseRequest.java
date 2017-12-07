@@ -9,12 +9,12 @@ import com.lzy.okgo.model.HttpHeaders;
 import com.lzy.okgo.model.HttpParams;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/15
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/15
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public interface BaseRequest {
     public void call(Context context,

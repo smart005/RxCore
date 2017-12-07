@@ -9,12 +9,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/9
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/9
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 @Documented
 @Target({ElementType.TYPE, ElementType.METHOD})
@@ -30,14 +30,14 @@ public @interface BaseUrlTypeName {
     /**
      * api未登录编码标识
      *
-     * @return
+     * return
      */
     String[] apiUnloginCodes() default "";
 
     /**
      * 是否输出api日志
      *
-     * @return
+     * return
      */
     boolean isPrintApiLog() default false;
 }

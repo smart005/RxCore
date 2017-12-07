@@ -1,17 +1,18 @@
 package com.cloud.core.enums;
 
 import android.content.Context;
+import android.text.TextUtils;
 
-import com.cloud.core.RxCoreUtils;
-import com.cloud.core.config.RxConfig;
+import com.cloud.core.configs.BaseCConfig;
+import com.cloud.core.configs.RxCoreConfigItems;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/12/30
- * @Description:图片规则类型
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/12/30
+ * Description:图片规则类型
+ * Modifier:
+ * ModifyContent:
  */
 public enum ImgRuleType {
     /**
@@ -60,10 +61,10 @@ public enum ImgRuleType {
     }
 
     public String getRule(Context context) {
-        RxConfig config = RxCoreUtils.getInstance().getConfig(context);
-        if (config.getPlatformType() == PlatformType.Alibaba) {
+        RxCoreConfigItems configItems = BaseCConfig.getInstance().getConfigItems(context);
+        if (TextUtils.equals(configItems.getImagePlatformType(), "ALIBABA")) {
             return this.aliRule;
-        } else if (config.getPlatformType() == PlatformType.Qiniu) {
+        } else if (TextUtils.equals(configItems.getImagePlatformType(), "QINIU")) {
             return this.qiniuRule;
         } else {
             return "";

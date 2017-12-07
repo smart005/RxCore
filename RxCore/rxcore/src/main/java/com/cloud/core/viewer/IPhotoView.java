@@ -33,7 +33,7 @@ public interface IPhotoView {
     /**
      * Returns true if the PhotoView is set to allow zooming of Photos.
      *
-     * @return true if the PhotoView allows zooming.
+     * return true if the PhotoView allows zooming.
      */
     boolean canZoom();
 
@@ -41,7 +41,7 @@ public interface IPhotoView {
      * Gets the Display Rectangle of the currently displayed Drawable. The Rectangle is relative to
      * this View and includes all scaling and translations.
      *
-     * @return - RectF of Displayed Drawable
+     * return - RectF of Displayed Drawable
      */
     RectF getDisplayRect();
 
@@ -49,8 +49,8 @@ public interface IPhotoView {
      * Sets the Display Matrix of the currently displayed Drawable. The Rectangle is considered
      * relative to this View and includes all scaling and translations.
      *
-     * @param finalMatrix target matrix to set PhotoView to
-     * @return - true if rectangle was applied successfully
+     * param finalMatrix target matrix to set PhotoView to
+     * return - true if rectangle was applied successfully
      */
     boolean setDisplayMatrix(Matrix finalMatrix);
 
@@ -58,7 +58,7 @@ public interface IPhotoView {
      * Gets the Display Matrix of the currently displayed Drawable. The Rectangle is considered
      * relative to this View and includes all scaling and translations.
      *
-     * @return copy of current Display Matrix
+     * return copy of current Display Matrix
      */
     Matrix getDisplayMatrix();
 
@@ -66,21 +66,21 @@ public interface IPhotoView {
      * Copies the Display Matrix of the currently displayed Drawable. The Rectangle is considered
      * relative to this View and includes all scaling and translations.
      *
-     * @param matrix target matrix to copy to
+     * param matrix target matrix to copy to
      */
     void getDisplayMatrix(Matrix matrix);
 
     /**
      * Use {@link #getMinimumScale()} instead, this will be removed in future release
      *
-     * @return The current minimum scale level. What this value represents depends on the current
+     * return The current minimum scale level. What this value represents depends on the current
      * {@link ImageView.ScaleType}.
      */
     @Deprecated
     float getMinScale();
 
     /**
-     * @return The current minimum scale level. What this value represents depends on the current
+     * return The current minimum scale level. What this value represents depends on the current
      * {@link ImageView.ScaleType}.
      */
     float getMinimumScale();
@@ -88,14 +88,14 @@ public interface IPhotoView {
     /**
      * Use {@link #getMediumScale()} instead, this will be removed in future release
      *
-     * @return The current middle scale level. What this value represents depends on the current
+     * return The current middle scale level. What this value represents depends on the current
      * {@link ImageView.ScaleType}.
      */
     @Deprecated
     float getMidScale();
 
     /**
-     * @return The current medium scale level. What this value represents depends on the current
+     * return The current medium scale level. What this value represents depends on the current
      * {@link ImageView.ScaleType}.
      */
     float getMediumScale();
@@ -103,14 +103,14 @@ public interface IPhotoView {
     /**
      * Use {@link #getMaximumScale()} instead, this will be removed in future release
      *
-     * @return The current maximum scale level. What this value represents depends on the current
+     * return The current maximum scale level. What this value represents depends on the current
      * {@link ImageView.ScaleType}.
      */
     @Deprecated
     float getMaxScale();
 
     /**
-     * @return The current maximum scale level. What this value represents depends on the current
+     * return The current maximum scale level. What this value represents depends on the current
      * {@link ImageView.ScaleType}.
      */
     float getMaximumScale();
@@ -118,14 +118,14 @@ public interface IPhotoView {
     /**
      * Returns the current scale value
      *
-     * @return float - current scale value
+     * return float - current scale value
      */
     float getScale();
 
     /**
      * Return the current scale type in use by the ImageView.
      *
-     * @return current ImageView.ScaleType
+     * return current ImageView.ScaleType
      */
     ImageView.ScaleType getScaleType();
 
@@ -133,7 +133,7 @@ public interface IPhotoView {
      * Whether to allow the ImageView's parent to intercept the touch event when the photo is scroll
      * to it's horizontal edge.
      *
-     * @param allow whether to allow intercepting by parent element or not
+     * param allow whether to allow intercepting by parent element or not
      */
     void setAllowParentInterceptOnEdge(boolean allow);
 
@@ -144,7 +144,7 @@ public interface IPhotoView {
      * Sets the minimum scale level. What this value represents depends on the current {@link
      * ImageView.ScaleType}.
      *
-     * @param minScale minimum allowed scale
+     * param minScale minimum allowed scale
      */
     @Deprecated
     void setMinScale(float minScale);
@@ -153,7 +153,7 @@ public interface IPhotoView {
      * Sets the minimum scale level. What this value represents depends on the current {@link
      * ImageView.ScaleType}.
      *
-     * @param minimumScale minimum allowed scale
+     * param minimumScale minimum allowed scale
      */
     void setMinimumScale(float minimumScale);
 
@@ -164,7 +164,7 @@ public interface IPhotoView {
      * Sets the middle scale level. What this value represents depends on the current {@link
      * ImageView.ScaleType}.
      *
-     * @param midScale medium scale preset
+     * param midScale medium scale preset
      */
     @Deprecated
     void setMidScale(float midScale);
@@ -172,7 +172,7 @@ public interface IPhotoView {
     /**
      * Sets the medium scale level. What this value represents depends on the current {@link ImageView.ScaleType}.
      *
-     * @param mediumScale medium scale preset
+     * param mediumScale medium scale preset
      */
     void setMediumScale(float mediumScale);
 
@@ -183,7 +183,7 @@ public interface IPhotoView {
      * Sets the maximum scale level. What this value represents depends on the current {@link
      * ImageView.ScaleType}.
      *
-     * @param maxScale maximum allowed scale preset
+     * param maxScale maximum allowed scale preset
      */
     @Deprecated
     void setMaxScale(float maxScale);
@@ -192,7 +192,7 @@ public interface IPhotoView {
      * Sets the maximum scale level. What this value represents depends on the current {@link
      * ImageView.ScaleType}.
      *
-     * @param maximumScale maximum allowed scale preset
+     * param maximumScale maximum allowed scale preset
      */
     void setMaximumScale(float maximumScale);
 
@@ -200,16 +200,16 @@ public interface IPhotoView {
      * Allows to set all three scale levels at once, so you don't run into problem with setting
      * medium/minimum scale before the maximum one
      *
-     * @param minimumScale minimum allowed scale
-     * @param mediumScale  medium allowed scale
-     * @param maximumScale maximum allowed scale preset
+     * param minimumScale minimum allowed scale
+     * param mediumScale  medium allowed scale
+     * param maximumScale maximum allowed scale preset
      */
     void setScaleLevels(float minimumScale, float mediumScale, float maximumScale);
 
     /**
      * Register a callback to be invoked when the Photo displayed by this view is long-pressed.
      *
-     * @param listener - Listener to be registered.
+     * param listener - Listener to be registered.
      */
     void setOnLongClickListener(View.OnLongClickListener listener);
 
@@ -217,7 +217,7 @@ public interface IPhotoView {
      * Register a callback to be invoked when the Matrix has changed for this View. An example would
      * be the user panning or scaling the Photo.
      *
-     * @param listener - Listener to be registered.
+     * param listener - Listener to be registered.
      */
     void setOnMatrixChangeListener(PhotoViewAttacher.OnMatrixChangedListener listener);
 
@@ -225,7 +225,7 @@ public interface IPhotoView {
      * Register a callback to be invoked when the Photo displayed by this View is tapped with a
      * single tap.
      *
-     * @param listener - Listener to be registered.
+     * param listener - Listener to be registered.
      */
     void setOnPhotoTapListener(PhotoViewAttacher.OnPhotoTapListener listener);
 
@@ -236,7 +236,7 @@ public interface IPhotoView {
      * Returns a listener to be invoked when the Photo displayed by this View is tapped with a
      * single tap.
      *
-     * @return PhotoViewAttacher.OnPhotoTapListener currently set, may be null
+     * return PhotoViewAttacher.OnPhotoTapListener currently set, may be null
      */
     @Deprecated
     PhotoViewAttacher.OnPhotoTapListener getOnPhotoTapListener();
@@ -244,21 +244,21 @@ public interface IPhotoView {
     /**
      * Register a callback to be invoked when the View is tapped with a single tap.
      *
-     * @param listener - Listener to be registered.
+     * param listener - Listener to be registered.
      */
     void setOnViewTapListener(PhotoViewAttacher.OnViewTapListener listener);
 
     /**
      * Enables rotation via PhotoView internal functions.
      *
-     * @param rotationDegree - Degree to rotate PhotoView to, should be in range 0 to 360
+     * param rotationDegree - Degree to rotate PhotoView to, should be in range 0 to 360
      */
     void setRotationTo(float rotationDegree);
 
     /**
      * Enables rotation via PhotoView internal functions.
      *
-     * @param rotationDegree - Degree to rotate PhotoView by, should be in range 0 to 360
+     * param rotationDegree - Degree to rotate PhotoView by, should be in range 0 to 360
      */
     void setRotationBy(float rotationDegree);
 
@@ -268,7 +268,7 @@ public interface IPhotoView {
      * <p>&nbsp;</p>
      * Returns a callback listener to be invoked when the View is tapped with a single tap.
      *
-     * @return PhotoViewAttacher.OnViewTapListener currently set, may be null
+     * return PhotoViewAttacher.OnViewTapListener currently set, may be null
      */
     @Deprecated
     PhotoViewAttacher.OnViewTapListener getOnViewTapListener();
@@ -276,25 +276,25 @@ public interface IPhotoView {
     /**
      * Changes the current scale to the specified value.
      *
-     * @param scale - Value to scale to
+     * param scale - Value to scale to
      */
     void setScale(float scale);
 
     /**
      * Changes the current scale to the specified value.
      *
-     * @param scale   - Value to scale to
-     * @param animate - Whether to animate the scale
+     * param scale   - Value to scale to
+     * param animate - Whether to animate the scale
      */
     void setScale(float scale, boolean animate);
 
     /**
      * Changes the current scale to the specified value, around the given focal point.
      *
-     * @param scale   - Value to scale to
-     * @param focalX  - X Focus Point
-     * @param focalY  - Y Focus Point
-     * @param animate - Whether to animate the scale
+     * param scale   - Value to scale to
+     * param focalX  - X Focus Point
+     * param focalY  - Y Focus Point
+     * param animate - Whether to animate the scale
      */
     void setScale(float scale, float focalX, float focalY, boolean animate);
 
@@ -303,7 +303,7 @@ public interface IPhotoView {
      * scaling or panning will happen within the confines of this {@link
      * ImageView.ScaleType}.
      *
-     * @param scaleType - The desired scaling mode.
+     * param scaleType - The desired scaling mode.
      */
     void setScaleType(ImageView.ScaleType scaleType);
 
@@ -311,7 +311,7 @@ public interface IPhotoView {
      * Allows you to enable/disable the zoom functionality on the ImageView. When disable the
      * ImageView reverts to using the FIT_CENTER matrix.
      *
-     * @param zoomable - Whether the zoom functionality is enabled.
+     * param zoomable - Whether the zoom functionality is enabled.
      */
     void setZoomable(boolean zoomable);
 
@@ -319,8 +319,8 @@ public interface IPhotoView {
      * Enables rotation via PhotoView internal functions. Name is chosen so it won't collide with
      * View.setRotation(float) in API since 11
      *
-     * @param rotationDegree - Degree to rotate PhotoView to, should be in range 0 to 360
-     * @deprecated use {@link #setRotationTo(float)}
+     * param rotationDegree - Degree to rotate PhotoView to, should be in range 0 to 360
+     * deprecated use {@link #setRotationTo(float)}
      */
     void setPhotoViewRotation(float rotationDegree);
 
@@ -328,7 +328,7 @@ public interface IPhotoView {
      * Extracts currently visible area to Bitmap object, if there is no image loaded yet or the
      * ImageView is already destroyed, returns {@code null}
      *
-     * @return currently visible area as bitmap or null
+     * return currently visible area as bitmap or null
      */
     Bitmap getVisibleRectangleBitmap();
 
@@ -336,7 +336,7 @@ public interface IPhotoView {
      * Allows to change zoom transition speed, default value is 200 (PhotoViewAttacher.DEFAULT_ZOOM_DURATION).
      * Will default to 200 if provided negative value
      *
-     * @param milliseconds duration of zoom interpolation
+     * param milliseconds duration of zoom interpolation
      */
     void setZoomTransitionDuration(int milliseconds);
 
@@ -344,7 +344,7 @@ public interface IPhotoView {
      * Will return instance of IPhotoView (eg. PhotoViewAttacher), can be used to provide better
      * integration
      *
-     * @return IPhotoView implementation instance if available, null if not
+     * return IPhotoView implementation instance if available, null if not
      */
     IPhotoView getIPhotoViewImplementation();
 
@@ -352,21 +352,21 @@ public interface IPhotoView {
      * Sets custom double tap listener, to intercept default given functions. To reset behavior to
      * default, you can just pass in "null" or public field of PhotoViewAttacher.defaultOnDoubleTapListener
      *
-     * @param newOnDoubleTapListener custom OnDoubleTapListener to be set on ImageView
+     * param newOnDoubleTapListener custom OnDoubleTapListener to be set on ImageView
      */
     void setOnDoubleTapListener(GestureDetector.OnDoubleTapListener newOnDoubleTapListener);
 
     /**
      * Will report back about scale changes
      *
-     * @param onScaleChangeListener OnScaleChangeListener instance
+     * param onScaleChangeListener OnScaleChangeListener instance
      */
     void setOnScaleChangeListener(PhotoViewAttacher.OnScaleChangeListener onScaleChangeListener);
 
     /**
      * Will report back about fling(single touch)
      *
-     * @param onSingleFlingListener OnSingleFlingListener instance
+     * param onSingleFlingListener OnSingleFlingListener instance
      */
     void setOnSingleFlingListener(PhotoViewAttacher.OnSingleFlingListener onSingleFlingListener);
 }

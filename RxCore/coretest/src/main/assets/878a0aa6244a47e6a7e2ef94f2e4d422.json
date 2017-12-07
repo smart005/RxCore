@@ -1,0 +1,35 @@
+{
+  "imagePlatformType": "ALIBABA",
+  "apiConfigs": {
+    "apiMessagePromptFilter": [],
+    "apiSpecificNameFilter": [],
+    "apiSuccessRet": [
+      "R0001",
+      "200",
+      "success"
+    ],
+    "apiUnauthorizedRet": []
+  },
+  "receiveAction": "662762580",
+  "defaultBackgroundImage": {
+    "name": "bg",
+    "type": "drawable"
+  },
+  "appIcon": {
+    "name": "icon1",
+    "type": "drawable"
+  },
+  "updateCheckActivityNames": [
+    "Main"
+  ],
+  "netStateRemindFilterActivityNames": [],
+  "appVersionCheck": {
+    "state": true,
+    "urlType": "UPDATE_INFO_URL"
+  },
+  "themeColor": "#ffffff",
+  "token": {
+    "name": "token",
+    "type": "apiToken"
+  }
+}

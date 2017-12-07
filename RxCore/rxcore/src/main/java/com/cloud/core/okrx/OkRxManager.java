@@ -21,12 +21,12 @@ import java.io.File;
 import java.util.HashMap;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/15
- * @Description:网络请求类
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/15
+ * Description:网络请求类
+ * Modifier:
+ * ModifyContent:
  */
 public class OkRxManager {
 

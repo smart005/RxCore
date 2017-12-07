@@ -5,12 +5,12 @@ import java.util.Queue;
 import java.util.concurrent.Executor;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/3/21
- * @Description:Runnable队列顺序执行
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/3/21
+ * Description:Runnable队列顺序执行
+ * Modifier:
+ * ModifyContent:
  */
 public class SerialExecutor implements Executor {
     private final Queue<Runnable> tasks = new ArrayDeque<Runnable>();

@@ -90,7 +90,7 @@ public class UpdateService {
     private OnVersionUpdateListener mvulistener = null;
 
     /**
-     * @param mvulistener 设置mvulistener
+     * param mvulistener 设置mvulistener
      */
     public void setMvulistener(OnVersionUpdateListener mvulistener) {
         this.mvulistener = mvulistener;
@@ -485,6 +485,7 @@ public class UpdateService {
                             miusinfo.getApkInfo().getApkName());
             notification.tickerText = subject;
             mrview.setTextViewText(ndventity.getSubjectText(), subject);
+            installApk();
         }
         noticeManager.notify(NOTIFICATION_ID, notification);
     }

@@ -38,8 +38,8 @@ public class SmallLoading {
 	/**
 	 * show small loading
 	 * 
-	 * @param context
-	 * @param container
+	 * param context
+	 * param container
 	 *            small loading container
 	 */
 	public void show(Context context, ViewGroup container) {
@@ -63,7 +63,7 @@ public class SmallLoading {
 	/**
 	 * dismiss small loading
 	 * 
-	 * @param container
+	 * param container
 	 *            small loading container
 	 */
 	public void dismiss(ViewGroup container) {

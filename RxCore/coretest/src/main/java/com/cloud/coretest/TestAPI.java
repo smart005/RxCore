@@ -4,6 +4,8 @@ import com.cloud.core.annotations.BaseUrlTypeName;
 import com.cloud.core.annotations.DELETE;
 import com.cloud.core.annotations.DataParam;
 import com.cloud.core.annotations.GET;
+import com.cloud.core.annotations.Header;
+import com.cloud.core.annotations.Headers;
 import com.cloud.core.annotations.POST;
 import com.cloud.core.annotations.Param;
 import com.cloud.core.annotations.Path;
@@ -50,7 +52,9 @@ public interface TestAPI {
     @DataParam(value = VersionBean.class)
     RetrofitParams requestOutsideUrl();
 
-    @POST(value = "/api/sendPayPhoneCode", isPrintApiLog = true)
+    @POST(value = "相对url", isPrintApiLog = true)
+    @Header(name = "token", value = "xxxxx")
+    @Headers({"key1:value1", "key2:{value2}"})
     @DataParam(value = BaseBean.class)
     RetrofitParams payCode(
             @Param("phone") String phone,

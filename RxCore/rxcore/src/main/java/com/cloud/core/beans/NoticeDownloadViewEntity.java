@@ -2,12 +2,12 @@ package com.cloud.core.beans;
 
 /**
  * 
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-7-30 上午10:41:34
- * @Description: 通知栏下载视图实体
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-7-30 上午10:41:34
+ * Description: 通知栏下载视图实体
+ * Modifier:
+ * ModifyContent:
  * 
  */
 public class NoticeDownloadViewEntity {
@@ -37,84 +37,84 @@ public class NoticeDownloadViewEntity {
 	private int progressPBar = 0;
 
 	/**
-	 * @return 获取通知栏布局
+	 * return 获取通知栏布局
 	 */
 	public int getNotificationLayout() {
 		return notificationLayout;
 	}
 
 	/**
-	 * @param 设置通知栏布局
+	 * param 设置通知栏布局
 	 */
 	public void setNotificationLayout(int notificationLayout) {
 		this.notificationLayout = notificationLayout;
 	}
 
 	/**
-	 * @return 获取图片
+	 * return 获取图片
 	 */
 	public int getIcon() {
 		return icon;
 	}
 
 	/**
-	 * @param 设置图片
+	 * param 设置图片
 	 */
 	public void setIcon(int icon) {
 		this.icon = icon;
 	}
 
 	/**
-	 * @return 获取图片资源
+	 * return 获取图片资源
 	 */
 	public int getIconResid() {
 		return iconResid;
 	}
 
 	/**
-	 * @param 设置图片资源
+	 * param 设置图片资源
 	 */
 	public void setIconResid(int iconResid) {
 		this.iconResid = iconResid;
 	}
 
 	/**
-	 * @return 获取主题文本
+	 * return 获取主题文本
 	 */
 	public int getSubjectText() {
 		return subjectText;
 	}
 
 	/**
-	 * @param 设置主题文本
+	 * param 设置主题文本
 	 */
 	public void setSubjectText(int subjectText) {
 		this.subjectText = subjectText;
 	}
 
 	/**
-	 * @return 获取进度文本
+	 * return 获取进度文本
 	 */
 	public int getProgressText() {
 		return progressText;
 	}
 
 	/**
-	 * @param 设置进度文本
+	 * param 设置进度文本
 	 */
 	public void setProgressText(int progressText) {
 		this.progressText = progressText;
 	}
 
 	/**
-	 * @return 获取进度条
+	 * return 获取进度条
 	 */
 	public int getProgressPBar() {
 		return progressPBar;
 	}
 
 	/**
-	 * @param 设置进度条
+	 * param 设置进度条
 	 */
 	public void setProgressPBar(int progressPBar) {
 		this.progressPBar = progressPBar;

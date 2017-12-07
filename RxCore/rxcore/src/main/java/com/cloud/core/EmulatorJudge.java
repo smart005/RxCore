@@ -13,12 +13,12 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/10/29
- * @Description:虚拟机判断
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/10/29
+ * Description:虚拟机判断
+ * Modifier:
+ * ModifyContent:
  */
 public class EmulatorJudge {
 

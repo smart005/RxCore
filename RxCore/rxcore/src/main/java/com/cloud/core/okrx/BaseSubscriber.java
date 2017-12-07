@@ -3,11 +3,13 @@ package com.cloud.core.okrx;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.cloud.core.RxCoreUtils;
 import com.cloud.core.beans.BaseBean;
 import com.cloud.core.beans.UnLoginCallInfo;
 import com.cloud.core.cache.RxCache;
-import com.cloud.core.config.RxConfig;
+import com.cloud.core.configs.ApiConfig;
+import com.cloud.core.configs.BaseCConfig;
+import com.cloud.core.configs.RxCoreConfigItems;
+import com.cloud.core.constants.Sys;
 import com.cloud.core.logger.Logger;
 import com.cloud.core.utils.JsonUtils;
 import com.cloud.core.utils.StorageUtils;
@@ -18,12 +20,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/14
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/14
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public abstract class BaseSubscriber<T extends BaseBean, BaseT extends BaseService> {
 
@@ -57,6 +59,10 @@ public abstract class BaseSubscriber<T extends BaseBean, BaseT extends BaseServi
         this.onUnLoginCallInfoListener = listener;
     }
 
+    public OnUnLoginCallInfoListener getOnUnLoginCallInfoListener() {
+        return this.onUnLoginCallInfoListener;
+    }
+
     public void setReqKey(String reqKey) {
         this.reqKey = reqKey;
     }
@@ -83,10 +89,10 @@ public abstract class BaseSubscriber<T extends BaseBean, BaseT extends BaseServi
 
     /**
      * API请求成功
-     *
-     * @param t
-     * @param reqKey 请求唯一标识符
-     * @param extra  额外数据
+     * <p>
+     * param t
+     * param reqKey 请求唯一标识符
+     * param extra  额外数据
      */
     protected void onSuccessful(T t, String reqKey, Object extra) {
 
@@ -94,9 +100,9 @@ public abstract class BaseSubscriber<T extends BaseBean, BaseT extends BaseServi
 
     /**
      * API请求成功
-     *
-     * @param t
-     * @param reqKey 请求唯一标识符
+     * <p>
+     * param t
+     * param reqKey 请求唯一标识符
      */
     protected void onSuccessful(T t, String reqKey) {
 
@@ -104,8 +110,8 @@ public abstract class BaseSubscriber<T extends BaseBean, BaseT extends BaseServi
 
     /**
      * API请求成功
-     *
-     * @param t
+     * <p>
+     * param t
      */
     protected void onSuccessful(T t) {
 
@@ -133,22 +139,26 @@ public abstract class BaseSubscriber<T extends BaseBean, BaseT extends BaseServi
             if (TextUtils.isEmpty(apiName)) {
                 apiName = baseT.getApiName();
             }
-            RxConfig config = RxCoreUtils.getInstance().getConfig(context);
+            RxCoreConfigItems configItems = BaseCConfig.getInstance().getConfigItems(context);
+            ApiConfig apiConfigs = configItems.getApiConfigs();
+            List<String> apiSuccessRet = apiConfigs.getApiSuccessRet();
+            List<String> apiSpecificNameFilter = apiConfigs.getApiSpecificNameFilter();
             if (TextUtils.isEmpty(t.getCode()) ||
-                    config.getApiConfig().getApiRet().contains(t.getCode()) ||
-                    config.getApiConfig().getApiSpecificNameFilter().contains(apiName) ||
+                    apiSuccessRet.contains(t.getCode()) ||
+                    apiSpecificNameFilter.contains(apiName) ||
                     (allowRetCodes != null && allowRetCodes.contains(t.getCode()))) {
                 onCacheSuccessful(t);
             } else {
-                if (config.getApiConfig().getApiUnlogin().contains(t.getCode())) {
+                List<String> apiUnauthorizedRet = apiConfigs.getApiUnauthorizedRet();
+                if (apiUnauthorizedRet.contains(t.getCode())) {
                     recordAPIClassInfo(t, API_UNLOGIN_FILE_NAME);
                     long currtime = System.currentTimeMillis();
                     if (START_LOGIN_TIME_STMPT == 0 || ((currtime - START_LOGIN_TIME_STMPT) > 3000)) {
                         if (context != null) {
                             START_LOGIN_TIME_STMPT = currtime;
-                            boolean loginFlag = RxCache.getCacheFlag(context, config.getStartLoginFlagKey());
+                            boolean loginFlag = RxCache.getCacheFlag(context, Sys.START_LOGIN_KEY);
                             if (!loginFlag) {
-                                RxCache.setCacheFlag(context, config.getStartLoginFlagKey(), true);
+                                RxCache.setCacheFlag(context, Sys.START_LOGIN_KEY, true);
                                 if (baseT != null) {
                                     //请求token api请求中的token清空
                                     baseT.setToken("");
@@ -163,8 +173,9 @@ public abstract class BaseSubscriber<T extends BaseBean, BaseT extends BaseServi
                         }
                     }
                 } else {
+                    List<String> apiMessagePromptFilter = apiConfigs.getApiMessagePromptFilter();
                     if (TextUtils.isEmpty(t.getCode()) ||
-                            !config.getApiConfig().getApiMessagePromptFilter().contains(t.getCode())) {
+                            !apiMessagePromptFilter.contains(t.getCode())) {
                         if (context != null) {
                             recordAPIClassInfo(t, API_ERROR_FILE_NAME);
                             String message = t.getMessage();

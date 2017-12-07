@@ -7,12 +7,12 @@ import com.cloud.core.logger.Logger;
 import java.io.File;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-8-14 上午10:59:25
- * @Description: 应用缓存管理工具
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-8-14 上午10:59:25
+ * Description: 应用缓存管理工具
+ * Modifier:
+ * ModifyContent:
  */
 public class AppCacheUtils {
 
@@ -23,7 +23,7 @@ public class AppCacheUtils {
     /**
      * copy应用程序缓存目录文件至sdcar目录
      *
-     * @param context
+     * param context
      */
     public void copyCacheFiles(Context context) {
         File dest = StorageUtils.getCachesDir();

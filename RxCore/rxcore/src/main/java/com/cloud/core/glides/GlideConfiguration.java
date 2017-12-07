@@ -12,12 +12,12 @@ import com.bumptech.glide.load.engine.cache.MemorySizeCalculator;
 import com.bumptech.glide.module.GlideModule;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/13
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/13
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class GlideConfiguration implements GlideModule {
     @Override

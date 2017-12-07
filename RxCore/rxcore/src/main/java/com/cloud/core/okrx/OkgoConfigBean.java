@@ -6,12 +6,12 @@ import com.lzy.okgo.model.HttpHeaders;
 import com.lzy.okgo.model.HttpParams;
 
 /**
- * @Author Gs
- * @Email:gs_12@foxmail.com
- * @CreateTime:2017/6/1
- * @Description: OkGo基础信息配置
- * @Modifier:
- * @ModifyContent:
+ * Author Gs
+ * Email:gs_12@foxmail.com
+ * CreateTime:2017/6/1
+ * Description: OkGo基础信息配置
+ * Modifier:
+ * ModifyContent:
  */
 
 public class OkgoConfigBean {

@@ -9,12 +9,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/6
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/6
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 @Documented
 @Target(ElementType.METHOD)
@@ -23,35 +23,35 @@ public @interface PUT {
     /**
      * 相对地址
      *
-     * @return
+     * return
      */
     String value() default "";
 
     /**
      * 相对地址库
      *
-     * @return
+     * return
      */
     UrlItem[] values() default {};
 
     /**
      * 若为true,则默认不添加此请求下的所有字段
      *
-     * @return
+     * return
      */
     boolean isRemoveEmptyValueField() default false;
 
     /**
      * 是否完整url
      *
-     * @return
+     * return
      */
     boolean isFullUrl() default false;
 
     /**
      * 数据提交方式
      *
-     * @return
+     * return
      */
     RequestContentType contentType() default RequestContentType.None;
 
@@ -59,14 +59,14 @@ public @interface PUT {
      * 若ApiCheckAnnotation中的IsTokenValid=true时才有效
      * true:接口返回后需要做登录检验;false:忽略检验;
      *
-     * @return
+     * return
      */
     boolean isLoginValid() default true;
 
     /**
      * 是否输出api日志
      *
-     * @return
+     * return
      */
     boolean isPrintApiLog() default false;
 }

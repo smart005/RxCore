@@ -12,12 +12,12 @@ import javax.crypto.spec.DESedeKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/1/5
- * @Description:带iv的3DES加密
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/1/5
+ * Description:带iv的3DES加密
+ * Modifier:
+ * ModifyContent:
  */
 public class ThreeDESIV {
 
@@ -27,10 +27,10 @@ public class ThreeDESIV {
     /**
      * 3DES加密
      *
-     * @param secretKey 密钥
-     * @param iv        向量
-     * @param plainText 普通文本
-     * @return
+     * param secretKey 密钥
+     * param iv        向量
+     * param plainText 普通文本
+     * return
      */
     public static String encode(String secretKey, String iv, String plainText) {
         try {
@@ -52,10 +52,10 @@ public class ThreeDESIV {
     /**
      * 3DES解密
      *
-     * @param secretKey   密钥
-     * @param iv          向量
-     * @param encryptText 加密文本
-     * @return
+     * param secretKey   密钥
+     * param iv          向量
+     * param encryptText 加密文本
+     * return
      */
     public static String decode(String secretKey, String iv, String encryptText) {
         try {

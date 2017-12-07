@@ -1,12 +1,12 @@
 package com.cloud.core.enums;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-6-19 上午8:44:24
- * @Description: 日期格式
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-6-19 上午8:44:24
+ * Description: 日期格式
+ * Modifier:
+ * ModifyContent:
  */
 public enum DateFormatEnum {
 

@@ -10,12 +10,12 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-7-23 下午10:52:25
- * @Description: 可循环文本处理类
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-7-23 下午10:52:25
+ * Description: 可循环文本处理类
+ * Modifier:
+ * ModifyContent:
  */
 public class CycleTextExecutor {
 
@@ -30,7 +30,7 @@ public class CycleTextExecutor {
     private int mcurrnum = 0;
 
     /**
-     * @param 设置每次执行时间间隔 (以秒为单位)
+     * param 设置每次执行时间间隔 (以秒为单位)
      */
     public void setPeriod(long period) {
         this.period = period;

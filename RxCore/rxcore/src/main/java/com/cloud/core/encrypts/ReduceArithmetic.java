@@ -5,12 +5,12 @@ import android.text.TextUtils;
 import com.cloud.core.utils.GlobalUtils;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-11-12 下午1:26:15
- * @Description: 字符串压缩与反压缩算法
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-11-12 下午1:26:15
+ * Description: 字符串压缩与反压缩算法
+ * Modifier:
+ * ModifyContent:
  */
 public class ReduceArithmetic {
 
@@ -44,8 +44,8 @@ public class ReduceArithmetic {
     /**
      * 获取压缩字符串
      *
-     * @param content 要处理的内容
-     * @return
+     * param content 要处理的内容
+     * return
      */
     public static String getReduceString(String content) {
         content = getReduce(content);

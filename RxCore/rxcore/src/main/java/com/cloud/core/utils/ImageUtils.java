@@ -15,12 +15,12 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/11/2
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/11/2
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 
 public class ImageUtils {

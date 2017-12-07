@@ -7,12 +7,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/1
- * @Description:url相对路径
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/1
+ * Description:url相对路径
+ * Modifier:
+ * ModifyContent:
  */
 @Documented
 @Target(ElementType.METHOD)

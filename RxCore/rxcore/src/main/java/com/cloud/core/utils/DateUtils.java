@@ -14,12 +14,12 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-6-19 上午8:42:07
- * @Description: 日期工具类
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-6-19 上午8:42:07
+ * Description: 日期工具类
+ * Modifier:
+ * ModifyContent:
  */
 public class DateUtils {
 
@@ -72,9 +72,9 @@ public class DateUtils {
     /**
      * 得到某年某月有多少天
      *
-     * @param year
-     * @param month
-     * @return
+     * param year
+     * param month
+     * return
      */
     public static int getMonthLastDay(int year, int month) {
         if (month == 0) {
@@ -92,7 +92,7 @@ public class DateUtils {
     /**
      * 获取年份
      *
-     * @return
+     * return
      */
     public static int getCurrentYear() {
         Calendar c = Calendar.getInstance();
@@ -102,7 +102,7 @@ public class DateUtils {
     /**
      * 获取月份
      *
-     * @return
+     * return
      */
     public static int getCurrentMonth() {
         Calendar c = Calendar.getInstance();
@@ -112,7 +112,7 @@ public class DateUtils {
     /**
      * 获取日期
      *
-     * @return
+     * return
      */
     public static int getCurrDay() {
         Calendar c = Calendar.getInstance();
@@ -132,10 +132,10 @@ public class DateUtils {
     /**
      * 得到几天/周/月/年后的日期，整数往后推,负数往前推进
      *
-     * @param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
+     * param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
      *                     YEAR
-     * @param next
-     * @return
+     * param next
+     * return
      */
     public static String getDayByDate(DateFormatEnum format,
                                       String separator,
@@ -157,9 +157,9 @@ public class DateUtils {
     /**
      * 得到几天/周/月/年后的日期，整数往后推,负数往前推进
      *
-     * @param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
-     * @param next
-     * @return
+     * param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
+     * param next
+     * return
      */
     public static Calendar getCalendar(int calendarType, int next) {
         Calendar calendar = Calendar.getInstance();
@@ -170,10 +170,10 @@ public class DateUtils {
     /**
      * 得到几天/周/月/年后的日期，整数往后推,负数往前推进
      *
-     * @param milliseconds
-     * @param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
-     * @param next
-     * @return
+     * param milliseconds
+     * param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
+     * param next
+     * return
      */
     public static Calendar getCalendar(long milliseconds, int calendarType,
                                        int next) {
@@ -188,9 +188,9 @@ public class DateUtils {
     /**
      * 得到几天/周/月/年后的日期，整数往后推,负数往前推进
      *
-     * @param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
-     * @param next
-     * @return
+     * param calendarType Calendar.DATE,Calendar.WEEK_OF_YEAR,Calendar.MONTH,Calendar.
+     * param next
+     * return
      */
     public static Date getDateByCalendar(int calendarType, int next) {
         Calendar calendar = getCalendar(calendarType, next);
@@ -201,9 +201,9 @@ public class DateUtils {
     /**
      * 获取毫秒时间差
      *
-     * @param start 开始毫秒数
-     * @param end   结束毫秒数
-     * @return
+     * param start 开始毫秒数
+     * param end   结束毫秒数
+     * return
      */
     public static long getMSTimeDiff(long start, long end) {
         if (start >= end) {
@@ -215,9 +215,9 @@ public class DateUtils {
     /**
      * 获取秒时间差
      *
-     * @param start 开始毫秒数
-     * @param end   结束毫秒数
-     * @return
+     * param start 开始毫秒数
+     * param end   结束毫秒数
+     * return
      */
     public static long getScondTimeDiff(long start, long end) {
         long diff = getMSTimeDiff(start, end);
@@ -230,9 +230,9 @@ public class DateUtils {
     /**
      * 获取分时间差
      *
-     * @param start 开始毫秒数
-     * @param end   结束毫秒数
-     * @return
+     * param start 开始毫秒数
+     * param end   结束毫秒数
+     * return
      */
     public static int getMinuteTimeDiff(long start, long end) {
         long diff = getMSTimeDiff(start, end);
@@ -245,9 +245,9 @@ public class DateUtils {
     /**
      * 获取小时时间差
      *
-     * @param start 开始毫秒数
-     * @param end   结束毫秒数
-     * @return
+     * param start 开始毫秒数
+     * param end   结束毫秒数
+     * return
      */
     public static int getHourTimeDiff(long start, long end) {
         long diff = getMSTimeDiff(start, end);
@@ -260,9 +260,9 @@ public class DateUtils {
     /**
      * 获取天时间差
      *
-     * @param start 开始毫秒数
-     * @param end   结束毫秒数
-     * @return
+     * param start 开始毫秒数
+     * param end   结束毫秒数
+     * return
      */
     public static int getDayTimeDiff(long start, long end) {
         long diff = getMSTimeDiff(start, end);
@@ -275,7 +275,7 @@ public class DateUtils {
     /**
      * 获取显示时间段(如3分钟前，1小时前，昨天等)
      *
-     * @return
+     * return
      */
     public static String getDisplayPeriodTime(long timeStamp, DisplayPeriodTimeType displayPeriodTimeType) {
         try {
@@ -382,7 +382,7 @@ public class DateUtils {
     /**
      * 获取显示时间段(如3分钟前，1小时前，昨天等)
      *
-     * @return
+     * return
      */
     public static String getDisplayPeriodTime(long timeStamp) {
         return getDisplayPeriodTime(timeStamp, DisplayPeriodTimeType.None);
@@ -398,7 +398,7 @@ public class DateUtils {
     /**
      * 截取掉前缀0以便转换为整数
      *
-     * @see #fillZero(int)
+     * see #fillZero(int)
      */
     public static int trimZero(String text) {
         if (text.startsWith("0")) {
@@ -411,8 +411,8 @@ public class DateUtils {
      * 功能：判断日期是否和当前date对象在同一天。
      * 参见：http://www.cnblogs.com/myzhijie/p/3330970.html
      *
-     * @param date 比较的日期
-     * @return boolean 如果在返回true，否则返回false。
+     * param date 比较的日期
+     * return boolean 如果在返回true，否则返回false。
      */
     public static boolean isSameDay(Date date) {
         if (date == null) {
@@ -427,11 +427,11 @@ public class DateUtils {
     }
 
     /**
-     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期<br/>
+     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期
      *
-     * @param dateStr    时间字符串
-     * @param dataFormat 当前时间字符串的格式。
-     * @return Date 日期 ,转换异常时返回null。
+     * param dateStr    时间字符串
+     * param dataFormat 当前时间字符串的格式。
+     * return Date 日期 ,转换异常时返回null。
      */
     public static Date parseDate(String dateStr, String dataFormat) {
         try {
@@ -445,10 +445,10 @@ public class DateUtils {
     }
 
     /**
-     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期<br/>
+     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期
      *
-     * @param dateStr yyyy-MM-dd HH:mm:ss字符串
-     * @return Date 日期 ,转换异常时返回null。
+     * param dateStr yyyy-MM-dd HH:mm:ss字符串
+     * return Date 日期 ,转换异常时返回null。
      */
     public static Date parseDate(String dateStr) {
         return parseDate(dateStr, "yyyy-MM-dd HH:mm:ss");

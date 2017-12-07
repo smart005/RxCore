@@ -2,12 +2,12 @@ package com.cloud.core.encrypts;
 
 /**
  * 
- * @Author LiJingHuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-5-28 上午9:12:32
- * @Description:Base64加密解密
- * @Modifier:
- * @ModifyContent:
+ * Author LiJingHuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-5-28 上午9:12:32
+ * Description:Base64加密解密
+ * Modifier:
+ * ModifyContent:
  * 
  */
 public class Base64 {

@@ -5,12 +5,12 @@ import android.os.Looper;
 import android.os.Message;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/3/7
- * @Description:主线程的handler对象
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/3/7
+ * Description:主线程的handler对象
+ * Modifier:
+ * ModifyContent:
  */
 public class HandlerUtils {
 

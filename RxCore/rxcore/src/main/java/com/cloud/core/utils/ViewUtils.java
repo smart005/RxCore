@@ -1,8 +1,8 @@
 /**
- * @Title: ViewUtils.java
- * @Description:
- * @author: lijinghuan
- * @data: 2015-3-3 上午9:17:16
+ * Title: ViewUtils.java
+ * Description:
+ * author: lijinghuan
+ * data: 2015-3-3 上午9:17:16
  */
 package com.cloud.core.utils;
 
@@ -21,8 +21,8 @@ public class ViewUtils {
     /**
      * 获取根视图
      *
-     * @param win Window
-     * @return View layout root view
+     * param win Window
+     * return View layout root view
      */
     public static View getRootView(Window win) {
         View fragment = win.getDecorView().findViewById(android.R.id.content);
@@ -62,8 +62,8 @@ public class ViewUtils {
     /**
      * 获取视图缓存图片
      *
-     * @param container 需要获取缓存图片的视图
-     * @return
+     * param container 需要获取缓存图片的视图
+     * return
      */
     public static Bitmap getViewCacheBitmap(View container) {
         container.setDrawingCacheEnabled(true);
@@ -74,11 +74,11 @@ public class ViewUtils {
 
     /**
      * 获取并缓存列表项视图
-     *
-     * @param convertView list item view
-     * @param id          控件id
-     * @param <T>         控件类型
-     * @return
+     * <p>
+     * param convertView list item view
+     * param id          控件id
+     * param         控件类型
+     * return
      */
     public static <T extends View> T getItemView(View convertView, int id) {
         SparseArray<View> holder = (SparseArray<View>) convertView.getTag();
@@ -97,10 +97,10 @@ public class ViewUtils {
     /**
      * 绑定视图
      *
-     * @param source 视图
-     * @param target 目标对象
-     * @param <T>    控件类型
-     * @return
+     * param source 视图
+     * param target 目标对象
+     * param    控件类型
+     * return
      */
     public static <T extends View> T bindView(View source, int target) {
         if (source != null && target != 0) {

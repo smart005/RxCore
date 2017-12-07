@@ -4,22 +4,21 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.util.Base64;
 
-import com.cloud.core.RxCoreUtils;
-import com.cloud.core.config.RxConfig;
+import com.cloud.core.configs.BaseCConfig;
+import com.cloud.core.configs.RxCoreConfigItems;
 import com.cloud.core.enums.ImgRuleType;
-import com.cloud.core.enums.PlatformType;
 import com.cloud.core.enums.RuleParams;
 import com.cloud.core.utils.ValidUtils;
 
 import java.text.MessageFormat;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/12/30
- * @Description:jpg图片数据源
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/12/30
+ * Description:jpg图片数据源
+ * Modifier:
+ * ModifyContent:
  */
 public class FormatDataModel {
 
@@ -31,15 +30,15 @@ public class FormatDataModel {
                                 int imgCorners) {
 
         String resultUrl = dataModelUrl;
-        RxConfig config = RxCoreUtils.getInstance().getConfig(context);
-        if (config.getPlatformType() == PlatformType.Alibaba) {
+        RxCoreConfigItems configItems = BaseCConfig.getInstance().getConfigItems(context);
+        if (TextUtils.equals(configItems.getImagePlatformType(), "ALIBABA")) {
             resultUrl = aliImgProcessRule(context,
                     dataModelUrl,
                     ruleType,
                     imgWidth,
                     imgHeight,
                     imgCorners);
-        } else if (config.getPlatformType() == PlatformType.Qiniu) {
+        } else if (TextUtils.equals(configItems.getImagePlatformType(), "QINIU")) {
             resultUrl = qiniuImgProcessRule(context,
                     dataModelUrl,
                     ruleType,

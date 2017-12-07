@@ -14,17 +14,17 @@ import android.widget.TextView;
 import com.cloud.core.utils.GlobalUtils;
 
 /**
- * @Author LIJINGHUAN
- * @Email:ljh0576123@163.com
- * @CreateTime:2016年2月29日 下午8:05:04
- * @Description: 标签项视图
- * @Modifier:
- * @ModifyContent:
+ * Author LIJINGHUAN
+ * Email:ljh0576123@163.com
+ * CreateTime:2016年2月29日 下午8:05:04
+ * Description: 标签项视图
+ * Modifier:
+ * ModifyContent:
  */
 public class TagItemView extends LinearLayout {
 
     /**
-     * @param context
+     * param context
      */
     public TagItemView(Context context, CharSequence text, int marginLeft,
                        int bgresid, int tvColor, int tvSize) {

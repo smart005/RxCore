@@ -6,12 +6,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/12
- * @Description:更多(详情)标记内部视图
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/12
+ * Description:更多(详情)标记内部视图
+ * Modifier:
+ * ModifyContent:
  */
 public class MoreTagView extends TextView {
 

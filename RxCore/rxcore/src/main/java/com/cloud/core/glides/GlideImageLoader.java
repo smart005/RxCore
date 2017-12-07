@@ -12,12 +12,12 @@ import com.cloud.core.enums.ImgRuleType;
 import java.io.InputStream;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/11/17
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/11/17
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 
 public class GlideImageLoader extends BaseGlideUrlLoader<IDataModel> {

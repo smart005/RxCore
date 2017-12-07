@@ -10,12 +10,12 @@ import com.cloud.core.ObjectJudge;
 import java.util.List;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/10/11
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/10/11
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class BaseParallaxRecyclerAdapter<T, BT extends ViewDataBinding> extends BaseRecycleAdapter<T, BT> {
 

@@ -12,12 +12,12 @@ import org.greenrobot.greendao.AbstractDao;
 import org.greenrobot.greendao.AbstractDaoMaster;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/14
- * @Description:数据库管理类
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/14
+ * Description:数据库管理类
+ * Modifier:
+ * ModifyContent:
  */
 public class DBManager {
 

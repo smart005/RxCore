@@ -9,10 +9,17 @@ import com.cloud.core.Func1;
 import com.cloud.core.annotations.ApiCheckAnnotation;
 import com.cloud.core.beans.BaseBean;
 import com.cloud.core.beans.RetrofitParams;
+import com.cloud.core.configs.BaseCConfig;
+import com.cloud.core.configs.ConfigItem;
+import com.cloud.core.configs.RxCoreConfigItems;
+import com.cloud.core.encrypts.CipherTextCode;
+import com.cloud.core.enums.ResFolderType;
 import com.cloud.core.okrx.BaseService;
 import com.cloud.core.okrx.BaseSubscriber;
 import com.cloud.core.okrx.OkRxValidParam;
+import com.cloud.core.utils.ResUtils;
 import com.cloud.coretest.beans.VersionBean;
+import com.gyf.barlibrary.ImmersionBar;
 
 /**
  * @Author lijinghuan
@@ -35,6 +42,15 @@ public class OkRxTest extends Activity {
                 testServer.payCode(OkRxTest.this);
             }
         });
+        ImmersionBar.with(this).init();
+        RxCoreConfigItems configItems = BaseCConfig.getInstance().getConfigItems(this);
+        ConfigItem defaultBackgroundImage = configItems.getDefaultBackgroundImage();
+        ResFolderType folderType = ResFolderType.getResFolderType(defaultBackgroundImage.getType());
+        int resource = ResUtils.getResource(this, defaultBackgroundImage.getName(), folderType);
+        annotationBtn.setBackgroundResource(resource);
+        String text = "apiname=com.alipay.account.auth&app_id=2017091308704847&app_name=mc&auth_type=AUTHACCOUNT&biz_type=openservice&method=alipay.open.auth.sdk.code.get&pid=2088721936446530&product_id=APP_FAST_LOGIN&scope=kuaijie&sign_type=RSA2&target_id=201712061029211512527361971&f5O5nsFCZUQaRmGRdpUwBY9EIXc0/lK+IPg8DS8PptvKq/xHWhfxZPg36+0bKuAFYGxxpNs1BN0FEvw88M8CDwrol3C2E+9QEMppcwbZBMWoBcxQRloSVgn30my32/gB8TRstHJUzNBNXsmoxF0f+ZXcD404cuSsx2rEZAuGybuuaZ+kUCCXrymJPcMiS3JK93Lx9F3uQLrQgsr/Ba1RQ6pi3v0dV20Drnxl0yiEvV0mxWPw/pJaQra0OiOLvFdLk0qTUGTwAOWc6MCedBTb/kCXRBc5502qAq3ZMZL91PNMYAPPcZjJqSkUFrg6gH1TM4RME9plyEyhPn+ISIsw1Q==";
+        String ciphertext = CipherTextCode.codingCiphertext(text);
+        String decodingCiphertext = CipherTextCode.decodingCiphertext(ciphertext);
     }
 
     public class TestServer extends BaseService {

@@ -1,6 +1,5 @@
 package com.cloud.core.utils;
 
-import android.animation.ArgbEvaluator;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -10,6 +9,7 @@ import android.text.TextUtils;
 import android.util.Xml;
 
 import com.cloud.core.beans.Argb;
+import com.cloud.core.enums.ResFolderType;
 import com.cloud.core.logger.Logger;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -23,12 +23,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Author Gs
- * @Email:gs_12@foxmail.com
- * @CreateTime:2017/8/15
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author Gs
+ * Email:gs_12@foxmail.com
+ * CreateTime:2017/8/15
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 
 public class ResUtils {
@@ -291,6 +291,9 @@ public class ResUtils {
     }
 
     public static int getResource(Context context, String fileName, ResFolderType resFolderType) {
+        if (context == null || TextUtils.isEmpty(fileName) || resFolderType == null) {
+            return 0;
+        }
         int resId = context.getResources().getIdentifier(fileName, resFolderType.getValue(), context.getPackageName());
         return resId;
     }
@@ -298,23 +301,5 @@ public class ResUtils {
     public static String getResourceName(Context context, int resId) {
         String resourceName = context.getResources().getResourceName(resId);
         return resourceName;
-    }
-
-    private enum ResFolderType {
-        String("strings"),
-        Array("arrays"),
-        Color("colors"),
-        Dimen("dimens"),
-        Drawable("drawable"),
-        Mipmap("mipmap");
-        private String value = "";
-
-        ResFolderType(String value) {
-            this.value = value;
-        }
-
-        public java.lang.String getValue() {
-            return value;
-        }
     }
 }

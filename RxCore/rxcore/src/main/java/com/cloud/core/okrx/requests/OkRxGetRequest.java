@@ -16,12 +16,12 @@ import com.lzy.okgo.model.Response;
 import com.lzy.okgo.request.GetRequest;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/15
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/15
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class OkRxGetRequest implements BaseRequest {
 

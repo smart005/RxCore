@@ -7,12 +7,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/6
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/6
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 @Documented
 @Target(ElementType.PARAMETER)
@@ -23,7 +23,7 @@ public @interface Param {
     /**
      * 若该请求字段值为空,则请求时不添加该字段
      *
-     * @return
+     * return
      */
     boolean isRemoveEmptyValueField() default true;
 }

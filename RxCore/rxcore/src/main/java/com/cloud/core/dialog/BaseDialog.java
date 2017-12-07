@@ -119,7 +119,7 @@ public class BaseDialog extends Dialog {
     /**
      * 窗口之外单击
      *
-     * @param iscancelbynotarea true:隐藏窗口;false:不作处理;
+     * param iscancelbynotarea true:隐藏窗口;false:不作处理;
      */
     public void isClickOutSide(boolean iscancelbynotarea) {
         this.iscancelbynotarea = iscancelbynotarea;
@@ -141,7 +141,7 @@ public class BaseDialog extends Dialog {
     /**
      * 设置内容对齐
      *
-     * @param gravity 默认Gravity.CENTER_HORIZONTAL
+     * param gravity 默认Gravity.CENTER_HORIZONTAL
      */
     public void setContentGravity(int gravity) {
         mcontentgravity = gravity;
@@ -150,7 +150,7 @@ public class BaseDialog extends Dialog {
     /**
      * 设置标题对齐方式
      *
-     * @param gravity
+     * param gravity
      */
     public void setTitleGravity(int gravity) {
         this.mtitlegravity = gravity;
@@ -161,7 +161,7 @@ public class BaseDialog extends Dialog {
     }
 
     /**
-     * @param isShowClose 设置是否显示关闭按钮
+     * param isShowClose 设置是否显示关闭按钮
      */
     public void setShowClose(boolean isShowClose) {
         this.isShowClose = isShowClose;
@@ -283,11 +283,11 @@ public class BaseDialog extends Dialog {
         /**
          * 水平分隔线
          *
-         * @param context
-         * @param top
-         * @param bottom
-         * @param orientation
-         * @return
+         * param context
+         * param top
+         * param bottom
+         * param orientation
+         * return
          */
         private View createSplitLine(Context context, int top, int bottom,
                                      int orientation, boolean ismargin) {
@@ -319,10 +319,10 @@ public class BaseDialog extends Dialog {
         /**
          * 垂直分隔线
          *
-         * @param context
-         * @param top
-         * @param bottom
-         * @return
+         * param context
+         * param top
+         * param bottom
+         * return
          */
         private View createVerticalSplitLine(Context context, int top,
                                              int bottom) {
@@ -524,7 +524,7 @@ public class BaseDialog extends Dialog {
     /**
      * true:显示buttons;false:隐藏
      *
-     * @param visible
+     * param visible
      */
     public void setVisibleButtons(boolean visible) {
         this.isvisiblebuttons = visible;
@@ -533,7 +533,7 @@ public class BaseDialog extends Dialog {
     /**
      * yes click listener 需在show之前注册
      *
-     * @param listener
+     * param listener
      */
     public void setOnYesClickListener(View.OnClickListener listener) {
         yeslistener = listener;
@@ -542,7 +542,7 @@ public class BaseDialog extends Dialog {
     /**
      * no click listener 需在show之前注册
      *
-     * @param listener
+     * param listener
      */
     public void setOnNoClickListener(View.OnClickListener listener) {
         nolistener = listener;
@@ -551,7 +551,7 @@ public class BaseDialog extends Dialog {
     /**
      * confirm click listener 需在show之前注册
      *
-     * @param listener
+     * param listener
      */
     public void setOnConfirmClickListener(View.OnClickListener listener) {
         confirmlistener = listener;
@@ -568,7 +568,7 @@ public class BaseDialog extends Dialog {
     /**
      * cancel click listener 需在show之前注册
      *
-     * @param listener
+     * param listener
      */
     public void setOnCancelClickListener(View.OnClickListener listener) {
         cancellistener = listener;
@@ -577,7 +577,7 @@ public class BaseDialog extends Dialog {
     /**
      * close click listener 关闭窗口
      *
-     * @param listener
+     * param listener
      */
     public void setOnCloseClickListener(View.OnClickListener listener) {
         closelistener = listener;
@@ -586,7 +586,7 @@ public class BaseDialog extends Dialog {
     /**
      * close click listener 取消登录
      *
-     * @param listener
+     * param listener
      */
     public void setOnCancelLoginClickListener(View.OnClickListener listener) {
         cancelloginlistener = listener;
@@ -595,7 +595,7 @@ public class BaseDialog extends Dialog {
     /**
      * relogin click listener 重新登录
      *
-     * @param listener
+     * param listener
      */
     public void setOnReLoginClickListener(View.OnClickListener listener) {
         reloginlistener = listener;

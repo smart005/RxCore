@@ -24,12 +24,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author LIJINGHUAN
- * @Email:ljh0576123@163.com
- * @CreateTime:2016年2月29日 下午7:44:46
- * @Description: 标签文本视图
- * @Modifier:
- * @ModifyContent:
+ * Author LIJINGHUAN
+ * Email:ljh0576123@163.com
+ * CreateTime:2016年2月29日 下午7:44:46
+ * Description: 标签文本视图
+ * Modifier:
+ * ModifyContent:
  */
 public class TagTextView extends RelativeLayout {
 
@@ -77,8 +77,8 @@ public class TagTextView extends RelativeLayout {
     private int lineHeight = 0;
 
     /**
-     * @param context
-     * @param attrs
+     * param context
+     * param attrs
      */
     public TagTextView(Context context) {
         super(context);
@@ -86,8 +86,8 @@ public class TagTextView extends RelativeLayout {
     }
 
     /**
-     * @param context
-     * @param attrs
+     * param context
+     * param attrs
      */
     public TagTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -122,21 +122,21 @@ public class TagTextView extends RelativeLayout {
     }
 
     /**
-     * @param tagPosition 设置标签显示位置
+     * param tagPosition 设置标签显示位置
      */
     public void setTagPosition(TagPosition tagPosition) {
         this.tagPosition = tagPosition;
     }
 
     /**
-     * @param 标签项背景 要设置的 tagItemBackgroundResource
+     * param 标签项背景 要设置的 tagItemBackgroundResource
      */
     public void setTagItemBackgroundResource(int tagItemBackgroundResource) {
         this.tagItemBackgroundResource = tagItemBackgroundResource;
     }
 
     /**
-     * @param 标签与文本间距 要设置的 tagAndTextSpacing
+     * param 标签与文本间距 要设置的 tagAndTextSpacing
      */
     public void setTagAndTextSpacing(int tagAndTextSpacing) {
         if (tagAndTextSpacing > 0) {
@@ -146,7 +146,7 @@ public class TagTextView extends RelativeLayout {
     }
 
     /**
-     * @param 标签之间间距 要设置的 tagSpacing
+     * param 标签之间间距 要设置的 tagSpacing
      */
     public void setTagSpacing(int tagSpacing) {
         if (tagSpacing > 0) {
@@ -155,35 +155,35 @@ public class TagTextView extends RelativeLayout {
     }
 
     /**
-     * @param 文本颜色 要设置的 colors
+     * param 文本颜色 要设置的 colors
      */
     public void setTextColor(ColorStateList colors) {
         this.colors = colors;
     }
 
     /**
-     * @param 标签文本颜色 要设置的 tagTextColor
+     * param 标签文本颜色 要设置的 tagTextColor
      */
     public void setTagTextColor(int tagTextColor) {
         this.tagTextColor = tagTextColor;
     }
 
     /**
-     * @param 字体大小 (单位dp) 要设置的 textSize
+     * param 字体大小 (单位dp) 要设置的 textSize
      */
     public void setTextSize(int textSize) {
         this.textSize = textSize;
     }
 
     /**
-     * @param 标签字体大小 (单位dp) 要设置的 tagTextSize
+     * param 标签字体大小 (单位dp) 要设置的 tagTextSize
      */
     public void setTagTextSize(int tagTextSize) {
         this.tagTextSize = tagTextSize;
     }
 
     /**
-     * @param 行高 (单位dp) 要设置的 lineHeight
+     * param 行高 (单位dp) 要设置的 lineHeight
      */
     public void setLineHeight(int lineHeight) {
         this.lineHeight = PixelUtils.dip2px(getContext(), lineHeight);

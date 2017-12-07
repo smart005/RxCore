@@ -101,9 +101,9 @@ public class ThreeDES {
     /**
      * 加密
      *
-     * @param key     　密钥
-     * @param content 　加密内容
-     * @return
+     * param key     　密钥
+     * param content 　加密内容
+     * return
      */
     public static String encrypt(String key, String content) {
         try {
@@ -124,9 +124,9 @@ public class ThreeDES {
     /**
      * 解密
      *
-     * @param key    　密钥
-     * @param cipher 　密文
-     * @return
+     * param key    　密钥
+     * param cipher 　密文
+     * return
      */
     public static String decrypt(String key, String cipher) {
         try {

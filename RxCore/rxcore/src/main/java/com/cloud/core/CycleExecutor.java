@@ -7,14 +7,14 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-9-8 上午8:51:43
- * @Description: 循环执行器(类似于定时器)
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-9-8 上午8:51:43
+ * Description: 循环执行器(类似于定时器)
+ * Modifier:
+ * ModifyContent:
  */
-public class CycleExecutor<T> {
+public class CycleExecutor {
 
     private ScheduledThreadPoolExecutor sc = null;
     /**
@@ -22,23 +22,23 @@ public class CycleExecutor<T> {
      */
     private long period = 1000;
 
-    private T[] parames;
+    private Object parames;
 
     /**
-     * @param 设置每次执行时间间隔 (以毫秒为单位)
+     * param 设置每次执行时间间隔 (以毫秒为单位)
      */
     public void setPeriod(long period) {
         this.period = period;
     }
 
     /**
-     * @param 设置parames
+     * param 设置parames
      */
-    public void setParames(T... parames) {
+    public void setParames(Object parames) {
         this.parames = parames;
     }
 
-    protected void onDoingExecutor(T... parames) {
+    protected void onDoingExecutor(Object parames) {
 
     }
 

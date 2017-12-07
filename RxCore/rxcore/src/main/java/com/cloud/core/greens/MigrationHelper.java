@@ -93,7 +93,7 @@ public final class MigrationHelper {
                 insertTableStringBuilder.append("CREATE TEMPORARY TABLE ").append(tempTableName);
                 insertTableStringBuilder.append(" AS SELECT * FROM ").append(tableName).append(";");
                 db.execSQL(insertTableStringBuilder.toString());
-                printLog("【Table】" + tableName + "\n ---Columns-->" + getColumnsStr(daoConfig));
+                printLog("【Table】" + tableName + "\n ---Columns--" + getColumnsStr(daoConfig));
                 printLog("【Generate temp table】" + tempTableName);
             } catch (SQLException e) {
                 Log.e(TAG, "【Failed to generate temp table】" + tempTableName, e);

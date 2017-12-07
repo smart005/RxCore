@@ -6,12 +6,12 @@ import com.cloud.core.enums.LogLevel;
 
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-7-11 下午3:18:44
- * @Description: 缓存日志文件参数
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-7-11 下午3:18:44
+ * Description: 缓存日志文件参数
+ * Modifier:
+ * ModifyContent:
  */
 public class CrashFileParam {
     /**
@@ -36,49 +36,49 @@ public class CrashFileParam {
     private PackageInfo packageInfo = null;
 
     /**
-     * @return 获取消息
+     * return 获取消息
      */
     public String getMessage() {
         return message;
     }
 
     /**
-     * @param 设置消息
+     * param 设置消息
      */
     public void setMessage(String message) {
         this.message = message;
     }
 
     /**
-     * @return 获取缓存值
+     * return 获取缓存值
      */
     public Object getCrashValue() {
         return crashValue;
     }
 
     /**
-     * @param 设置缓存值
+     * param 设置缓存值
      */
     public void setCrashValue(Object crashValue) {
         this.crashValue = crashValue;
     }
 
     /**
-     * @return 获取日志级别
+     * return 获取日志级别
      */
     public LogLevel getLevel() {
         return level;
     }
 
     /**
-     * @param 设置日志级别
+     * param 设置日志级别
      */
     public void setLevel(LogLevel level) {
         this.level = level;
     }
 
     /**
-     * @return 获取设备信息
+     * return 获取设备信息
      */
     public DeviceInfo getDeviceInfo() {
         if (deviceInfo == null) {
@@ -91,14 +91,14 @@ public class CrashFileParam {
     /**
      * 设置设备信息
      *
-     * @param deviceInfo
+     * param deviceInfo
      */
     public void setDeviceInfo(DeviceInfo deviceInfo) {
         this.deviceInfo = deviceInfo;
     }
 
     /**
-     * @return 获取包信息
+     * return 获取包信息
      */
     public PackageInfo getPackageInfo() {
         if (packageInfo == null) {
@@ -111,7 +111,7 @@ public class CrashFileParam {
     /**
      * 设置包信息
      *
-     * @param packageInfo
+     * param packageInfo
      */
     public void setPackageInfo(PackageInfo packageInfo) {
         this.packageInfo = packageInfo;

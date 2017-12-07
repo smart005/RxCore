@@ -7,12 +7,12 @@ import com.cloud.core.logger.Logger;
 import java.io.UnsupportedEncodingException;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/18
- * @Description:首字符读取
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/18
+ * Description:首字符读取
+ * Modifier:
+ * ModifyContent:
  */
 public class FirstLetters {
     private static final int GB_SP_DIFF = 160;
@@ -22,8 +22,8 @@ public class FirstLetters {
     /**
      * 获取字符串每个字符拼音的首字母
      *
-     * @param oriString 原字符串
-     * @return
+     * param oriString 原字符串
+     * return
      */
     public static String getStringFirstLetters(String oriString) {
         try {
@@ -48,8 +48,8 @@ public class FirstLetters {
     /**
      * 获取字符串第一个字符拼音的首字母
      *
-     * @param oriString 原字符串
-     * @return
+     * param oriString 原字符串
+     * return
      */
     public static String getStringFirstCharacterFirstLetter(String oriString) {
         try {

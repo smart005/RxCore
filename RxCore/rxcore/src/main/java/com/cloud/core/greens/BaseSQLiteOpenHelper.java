@@ -9,12 +9,12 @@ import org.greenrobot.greendao.AbstractDao;
 import org.greenrobot.greendao.database.Database;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/14
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/14
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class BaseSQLiteOpenHelper extends DaoMaster.OpenHelper {
 

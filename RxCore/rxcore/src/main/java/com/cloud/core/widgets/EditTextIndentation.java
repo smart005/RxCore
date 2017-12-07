@@ -19,12 +19,12 @@ import com.cloud.core.logger.Logger;
 import static android.content.Context.CLIPBOARD_SERVICE;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/9/10
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/9/10
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class EditTextIndentation extends EditText {
 
@@ -56,7 +56,7 @@ public class EditTextIndentation extends EditText {
     /**
      * 设置是否首行缩进
      *
-     * @param firstLineIndentation
+     * param firstLineIndentation
      */
     public void setFirstLineIndentation(boolean firstLineIndentation) {
         this.firstLineIndentation = firstLineIndentation;
@@ -69,7 +69,7 @@ public class EditTextIndentation extends EditText {
     /**
      * 设置文本内容
      *
-     * @param textContent
+     * param textContent
      */
     public void setTextContent(CharSequence textContent) {
         this.textContent = textContent;
@@ -199,7 +199,7 @@ public class EditTextIndentation extends EditText {
     /**
      * 获取文本内容
      *
-     * @param content
+     * param content
      */
     public SpannableStringBuilder buildContent() {
         SpannableStringBuilder ssb = new SpannableStringBuilder();

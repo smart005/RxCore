@@ -15,12 +15,12 @@ import android.widget.TextView;
 import com.cloud.core.logger.Logger;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/9/10
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/9/10
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class ReplyTextTagText extends TextView {
 
@@ -33,11 +33,11 @@ public class ReplyTextTagText extends TextView {
      */
     private CharSequence replyContent = "";
     /**
-     * @内容
+     * 内容
      */
     private CharSequence atContent = "";
     /**
-     * @标签
+     * 标签
      */
     private String atTag = "";
 
@@ -70,7 +70,7 @@ public class ReplyTextTagText extends TextView {
     /**
      * 设置链接文本颜色(默认#576b95)
      *
-     * @param linkColor
+     * param linkColor
      */
     public void setLinkColor(String linkColor) {
         this.linkColor = linkColor;
@@ -86,7 +86,7 @@ public class ReplyTextTagText extends TextView {
     /**
      * 设置回复内容
      *
-     * @param replyContent
+     * param replyContent
      */
     public void setReplyContent(CharSequence replyContent) {
         this.replyContent = replyContent;
@@ -102,7 +102,7 @@ public class ReplyTextTagText extends TextView {
     /**
      * 设置@内容
      *
-     * @param atContent
+     * param atContent
      */
     public void setAtContent(CharSequence atContent) {
         this.atContent = atContent;
@@ -121,7 +121,7 @@ public class ReplyTextTagText extends TextView {
     /**
      * 设置@标签
      *
-     * @param atTag
+     * param atTag
      */
     public void setAtTag(String atTag) {
         this.atTag = atTag;
@@ -130,7 +130,7 @@ public class ReplyTextTagText extends TextView {
     /**
      * 获取回复内容
      *
-     * @param content
+     * param content
      */
     public <T> SpannableStringBuilder getContent(T obj) {
         SpannableStringBuilder ssb = new SpannableStringBuilder();

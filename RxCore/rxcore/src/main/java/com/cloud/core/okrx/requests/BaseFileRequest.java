@@ -10,12 +10,12 @@ import com.lzy.okgo.model.HttpParams;
 import java.io.File;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/15
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/15
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public interface BaseFileRequest {
     public void call(Context context,

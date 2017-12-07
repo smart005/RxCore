@@ -27,12 +27,12 @@ import java.util.concurrent.TimeUnit;
 import static java.lang.String.valueOf;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/10/14
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/10/14
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 
 public class RxCache {
@@ -56,10 +56,10 @@ public class RxCache {
     /**
      * 设置缓存数据
      *
-     * @param cacheKey 缓存键
-     * @param value    缓存数据
-     * @param saveTime 缓存时间
-     * @param timeUnit 时间单位
+     * param cacheKey 缓存键
+     * param value    缓存数据
+     * param saveTime 缓存时间
+     * param timeUnit 时间单位
      */
     private static <T> void setBaseCacheData(Context context,
                                              String cacheKey,
@@ -126,8 +126,8 @@ public class RxCache {
     /**
      * 获取缓存数据
      *
-     * @param cacheKey 缓存键
-     * @return
+     * param cacheKey 缓存键
+     * return
      */
     private static CacheDataItem getBaseCacheData(Context context, String cacheKey) {
         try {
@@ -187,8 +187,8 @@ public class RxCache {
     /**
      * 获取缓存数据
      *
-     * @param cacheKey 缓存键
-     * @return
+     * param cacheKey 缓存键
+     * return
      */
     public static String getCacheData(Context context, String cacheKey) {
         if (redisCacheList.containsKey(cacheKey)) {
@@ -235,10 +235,10 @@ public class RxCache {
     /**
      * 设置缓存数据
      *
-     * @param cacheKey 缓存键
-     * @param value    缓存数据
-     * @param saveTime 缓存时间
-     * @param timeUnit 时间单位
+     * param cacheKey 缓存键
+     * param value    缓存数据
+     * param saveTime 缓存时间
+     * param timeUnit 时间单位
      */
     public static void setCacheData(Context context,
                                     String cacheKey,
@@ -251,8 +251,8 @@ public class RxCache {
     /**
      * 设置缓存数据
      *
-     * @param cacheKey 缓存键
-     * @param value    缓存数据
+     * param cacheKey 缓存键
+     * param value    缓存数据
      */
     public static void setCacheData(Context context, String cacheKey, String value) {
         setBaseCacheData(context, cacheKey, value, 0, null);
@@ -361,7 +361,7 @@ public class RxCache {
     /**
      * 移除指定缓存
      *
-     * @param cacheKey 缓存key
+     * param cacheKey 缓存key
      */
     public static void remove(Context context, String cacheKey) {
         try {
@@ -408,10 +408,10 @@ public class RxCache {
     /**
      * 设置缓存数据
      *
-     * @param cacheKey 缓存键
-     * @param value    缓存数据
-     * @param saveTime 缓存时间
-     * @param timeUnit 时间单位
+     * param cacheKey 缓存键
+     * param value    缓存数据
+     * param saveTime 缓存时间
+     * param timeUnit 时间单位
      */
     public static void setJsonObject(Context context,
                                      String cacheKey,
@@ -427,8 +427,8 @@ public class RxCache {
     /**
      * 设置缓存数据
      *
-     * @param cacheKey 缓存键
-     * @param value    缓存数据
+     * param cacheKey 缓存键
+     * param value    缓存数据
      */
     public static void setJsonObject(Context context, String cacheKey, JSONObject value) {
         if (TextUtils.isEmpty(cacheKey) || value == null) {
@@ -440,8 +440,8 @@ public class RxCache {
     /**
      * 获取缓存数据
      *
-     * @param cacheKey 缓存键
-     * @return
+     * param cacheKey 缓存键
+     * return
      */
     public static JSONObject getJsonObject(Context context, String cacheKey) {
         try {
@@ -455,10 +455,10 @@ public class RxCache {
     /**
      * 设置缓存数据
      *
-     * @param cacheKey 缓存键
-     * @param value    缓存数据
-     * @param saveTime 缓存时间
-     * @param timeUnit 时间单位
+     * param cacheKey 缓存键
+     * param value    缓存数据
+     * param saveTime 缓存时间
+     * param timeUnit 时间单位
      */
     public static void setJsonArray(Context context, String cacheKey, JSONArray value, long saveTime, TimeUnit timeUnit) {
         if (TextUtils.isEmpty(cacheKey) || value == null) {
@@ -470,8 +470,8 @@ public class RxCache {
     /**
      * 设置缓存数据
      *
-     * @param cacheKey 缓存键
-     * @param value    缓存数据
+     * param cacheKey 缓存键
+     * param value    缓存数据
      */
     public static void setJsonArray(Context context, String cacheKey, JSONArray value) {
         setJsonArray(context, cacheKey, value, 0, null);
@@ -480,8 +480,8 @@ public class RxCache {
     /**
      * 获取缓存数据
      *
-     * @param cacheKey 缓存键
-     * @return
+     * param cacheKey 缓存键
+     * return
      */
     public static JSONArray getJsonArray(Context context, String cacheKey) {
         try {

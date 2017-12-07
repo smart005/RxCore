@@ -10,12 +10,12 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/6/1
- * @Description:http 改造参数
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/6/1
+ * Description:http 改造参数
+ * Modifier:
+ * ModifyContent:
  */
 public class RetrofitParams {
     /**
@@ -156,7 +156,7 @@ public class RetrofitParams {
     /**
      * 设置api名称
      *
-     * @param apiName
+     * param apiName
      */
     public void setApiName(String apiName) {
         this.apiName = apiName;
@@ -180,7 +180,7 @@ public class RetrofitParams {
     /**
      * 设置请求验证是否通过
      *
-     * @param flag
+     * param flag
      */
     public void setFlag(boolean flag) {
         this.flag = flag;
@@ -196,7 +196,7 @@ public class RetrofitParams {
     /**
      * 设置是否拼接url
      *
-     * @param isJoinUrl
+     * param isJoinUrl
      */
     public void setIsJoinUrl(boolean isJoinUrl) {
         this.isJoinUrl = isJoinUrl;

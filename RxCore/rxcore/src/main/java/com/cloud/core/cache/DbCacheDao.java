@@ -7,12 +7,12 @@ import com.cloud.core.greens.DBManager;
 import com.cloud.core.logger.Logger;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/14
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/14
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class DbCacheDao {
     private DaoMaster daoMaster = null;

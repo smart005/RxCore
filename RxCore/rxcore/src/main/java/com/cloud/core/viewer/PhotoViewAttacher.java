@@ -77,14 +77,14 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     }
 
     /**
-     * @return true if the ImageView exists, and it's Drawable exists
+     * return true if the ImageView exists, and it's Drawable exists
      */
     private static boolean hasDrawable(ImageView imageView) {
         return null != imageView && null != imageView.getDrawable();
     }
 
     /**
-     * @return true if the ScaleType is supported.
+     * return true if the ScaleType is supported.
      */
     private static boolean isSupportedScaleType(final ScaleType scaleType) {
         if (null == scaleType) {
@@ -234,7 +234,6 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
      * Clean-up the resources attached to this object. This needs to be called when the ImageView is
      * no longer used. A good example is from {@link View#onDetachedFromWindow()} or
      * from {@link android.app.Activity#onDestroy()}. This is automatically called if you are using
-     * {@link uk.co.senab.photoview.PhotoView}.
      */
     @SuppressWarnings("deprecation")
     public void cleanup() {
@@ -307,7 +306,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     }
 
     /**
-     * @deprecated use {@link #setRotationTo(float)}
+     * deprecated use {@link #setRotationTo(float)}
      */
     @Override
     public void setPhotoViewRotation(float degrees) {
@@ -653,8 +652,8 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     /**
      * Set the zoom interpolator
-     *
-     * @param interpolator the zoom interpolator
+     * <p>
+     * param interpolator the zoom interpolator
      */
     public void setZoomInterpolator(Interpolator interpolator) {
         mInterpolator = interpolator;
@@ -704,8 +703,8 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     /**
      * Like {@link #getDisplayMatrix()}, but allows the user to provide a matrix to copy the values into to reduce object allocation
-     *
-     * @param matrix target matrix to copy to
+     * <p>
+     * param matrix target matrix to copy to
      */
     @Override
     public void getDisplayMatrix(Matrix matrix) {
@@ -825,9 +824,9 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     /**
      * Helper method that maps the supplied Matrix to the current Drawable
-     *
-     * @param matrix - Matrix to map Drawable against
-     * @return RectF - Displayed Rectangle
+     * <p>
+     * param matrix - Matrix to map Drawable against
+     * return RectF - Displayed Rectangle
      */
     private RectF getDisplayRect(Matrix matrix) {
         ImageView imageView = getImageView();
@@ -863,10 +862,10 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     /**
      * Helper method that 'unpacks' a Matrix and returns the required value
-     *
-     * @param matrix     - Matrix to unpack
-     * @param whichValue - Which value from Matrix.M* to return
-     * @return float - returned value
+     * <p>
+     * param matrix     - Matrix to unpack
+     * param whichValue - Which value from Matrix.M* to return
+     * return float - returned value
      */
     private float getValue(Matrix matrix, int whichValue) {
         matrix.getValues(mMatrixValues);
@@ -902,8 +901,8 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     /**
      * Calculate Matrix for FIT_CENTER
-     *
-     * @param d - Drawable being displayed
+     * <p>
+     * param d - Drawable being displayed
      */
     private void updateBaseMatrix(Drawable d) {
         ImageView imageView = getImageView();
@@ -986,31 +985,31 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the internal Matrix has changed for
      * this View.
-     *
-     * @author Chris Banes
+     * <p>
+     * author Chris Banes
      */
     public interface OnMatrixChangedListener {
         /**
          * Callback for when the Matrix displaying the Drawable has changed. This could be because
          * the View's bounds have changed, or the user has zoomed.
-         *
-         * @param rect - Rectangle displaying the Drawable's new bounds.
+         * <p>
+         * param rect - Rectangle displaying the Drawable's new bounds.
          */
         void onMatrixChanged(RectF rect);
     }
 
     /**
      * Interface definition for callback to be invoked when attached ImageView scale changes
-     *
-     * @author Marek Sebera
+     * <p>
+     * author Marek Sebera
      */
     public interface OnScaleChangeListener {
         /**
          * Callback for when the scale changes
-         *
-         * @param scaleFactor the scale factor (less than 1 for zoom out, greater than 1 for zoom in)
-         * @param focusX      focal point X position
-         * @param focusY      focal point Y position
+         * <p>
+         * param scaleFactor the scale factor (less than 1 for zoom out, greater than 1 for zoom in)
+         * param focusX      focal point X position
+         * param focusY      focal point Y position
          */
         void onScaleChange(float scaleFactor, float focusX, float focusY);
     }
@@ -1018,20 +1017,20 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the Photo is tapped with a single
      * tap.
-     *
-     * @author Chris Banes
+     * <p>
+     * author Chris Banes
      */
     public interface OnPhotoTapListener {
 
         /**
          * A callback to receive where the user taps on a photo. You will only receive a callback if
          * the user taps on the actual photo, tapping on 'whitespace' will be ignored.
-         *
-         * @param view - View the user tapped.
-         * @param x    - where the user tapped from the of the Drawable, as percentage of the
-         *             Drawable width.
-         * @param y    - where the user tapped from the top of the Drawable, as percentage of the
-         *             Drawable height.
+         * <p>
+         * param view - View the user tapped.
+         * param x    - where the user tapped from the of the Drawable, as percentage of the
+         * Drawable width.
+         * param y    - where the user tapped from the top of the Drawable, as percentage of the
+         * Drawable height.
          */
         void onPhotoTap(View view, float x, float y);
 
@@ -1044,18 +1043,18 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the ImageView is tapped with a single
      * tap.
-     *
-     * @author Chris Banes
+     * <p>
+     * author Chris Banes
      */
     public interface OnViewTapListener {
 
         /**
          * A callback to receive where the user taps on a ImageView. You will receive a callback if
          * the user taps anywhere on the view, tapping on 'whitespace' will not be ignored.
-         *
-         * @param view - View the user tapped.
-         * @param x    - where the user tapped from the left of the View.
-         * @param y    - where the user tapped from the top of the View.
+         * <p>
+         * param view - View the user tapped.
+         * param x    - where the user tapped from the left of the View.
+         * param y    - where the user tapped from the top of the View.
          */
         void onViewTap(View view, float x, float y);
     }
@@ -1063,19 +1062,19 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the ImageView is fling with a single
      * touch
-     *
-     * @author tonyjs
+     * <p>
+     * author tonyjs
      */
     public interface OnSingleFlingListener {
 
         /**
          * A callback to receive where the user flings on a ImageView. You will receive a callback if
          * the user flings anywhere on the view.
-         *
-         * @param e1        - MotionEvent the user first touch.
-         * @param e2        - MotionEvent the user last touch.
-         * @param velocityX - distance of user's horizontal fling.
-         * @param velocityY - distance of user's vertical fling.
+         * <p>
+         * param e1        - MotionEvent the user first touch.
+         * param e2        - MotionEvent the user last touch.
+         * param velocityX - distance of user's horizontal fling.
+         * param velocityY - distance of user's vertical fling.
          */
         boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY);
     }

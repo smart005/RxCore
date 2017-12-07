@@ -27,4 +27,5 @@ dependencies {
     compile project(':rxcore')
     compile 'org.greenrobot:greendao:3.2.2'
     compile 'org.greenrobot:greendao-generator:3.2.0'
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
 }

@@ -31,12 +31,12 @@ import java.util.Enumeration;
 import java.util.List;
 
 /**
- * @Author LiJingHuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-6-3 上午11:01:01
- * @Description:app相关信息工具类
- * @Modifier:
- * @ModifyContent:
+ * Author LiJingHuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-6-3 上午11:01:01
+ * Description:app相关信息工具类
+ * Modifier:
+ * ModifyContent:
  */
 public class AppInfoUtils {
 
@@ -57,7 +57,7 @@ public class AppInfoUtils {
     /**
      * 获取CPU序列号
      *
-     * @return CPU序列号(16位) 读取失败为""
+     * return CPU序列号(16位) 读取失败为""
      */
     public static String getCPUSerial() {
         String str = "", strCPU = "", cpuAddress = "";
@@ -88,8 +88,8 @@ public class AppInfoUtils {
     }
 
     /**
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static DeviceInfo getDeviceInfo(Context context) {
         DeviceInfo dvinfo = new DeviceInfo();
@@ -159,9 +159,9 @@ public class AppInfoUtils {
     /**
      * 获取可执行文件(apk或jar)包信息
      *
-     * @param context
-     * @param file
-     * @return
+     * param context
+     * param file
+     * return
      */
     public static PackageInfo getPackageInfoByFile(Context context, File file) {
         PackageManager pm = ObjectManager.getPackageManager(context);
@@ -221,7 +221,7 @@ public class AppInfoUtils {
     /**
      * 获得app进程名
      *
-     * @param context 宿主上下文
+     * param context 宿主上下文
      */
     public static String getAppProcessName(Context context) {
         int pid = android.os.Process.myPid();
@@ -231,7 +231,7 @@ public class AppInfoUtils {
     /**
      * 获取cup架构
      *
-     * @return
+     * return
      */
     public static List<String> getCPUAbis() {
         List<String> lst = new ArrayList<String>();
@@ -254,7 +254,7 @@ public class AppInfoUtils {
     /**
      * 获取SD卡剩余空间
      *
-     * @return
+     * return
      */
     public static long getSDFreeSize() {
         try {
@@ -278,7 +278,7 @@ public class AppInfoUtils {
     /**
      * 获取SD卡总容量
      *
-     * @return
+     * return
      */
     public static long getSDAllSize() {
         try {

@@ -26,10 +26,10 @@ import java.util.Map;
 
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/14
- * @Description:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/14
+ * Description:
  */
 public class BaseService {
 
@@ -59,7 +59,7 @@ public class BaseService {
     /**
      * 设置token值
      *
-     * @param token
+     * param token
      */
     public void setToken(String token) {
         this.token = token;
@@ -78,7 +78,7 @@ public class BaseService {
     /**
      * 设置接口名
      *
-     * @param apiName
+     * param apiName
      */
     public void setApiName(String apiName) {
         this.apiName = apiName;
@@ -541,8 +541,8 @@ public class BaseService {
             }
             if (!TextUtils.isEmpty(responseString)) {
                 int length = responseString.length();
-                for (int i = 0; i < length; i += 30) {
-                    int endIndex = i + 30;
+                for (int i = 0; i < length; i += 90) {
+                    int endIndex = i + 90;
                     if (endIndex >= length) {
                         buffer.append(String.format("%s\n", responseString.substring(i)));
                     } else {
@@ -595,17 +595,6 @@ public class BaseService {
         return httpParams;
     }
 
-    /**
-     * @param context
-     * @param apiClass
-     * @param server
-     * @param baseSubscriber
-     * @param validParam
-     * @param urlAction
-     * @param decApiAction
-     * @param <I>
-     * @param <S>
-     */
     protected <T extends BaseBean, I, S extends BaseService> void requestObject(Context context,
                                                                                 Class<I> apiClass,
                                                                                 S server,

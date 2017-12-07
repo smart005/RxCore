@@ -11,20 +11,20 @@ import android.view.Display;
 import android.view.WindowManager;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-9-6 下午2:43:54
- * @Description: 基本对象
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-9-6 下午2:43:54
+ * Description: 基本对象
+ * Modifier:
+ * ModifyContent:
  */
 public class ObjectManager {
 
     /**
      * 获取WindowManager
      *
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static WindowManager getWindowManager(Context context) {
         return (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
@@ -33,8 +33,8 @@ public class ObjectManager {
     /**
      * 获取包管理
      *
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static PackageManager getPackageManager(Context context) {
         return context.getPackageManager();
@@ -43,10 +43,10 @@ public class ObjectManager {
     /**
      * 获取包信息
      *
-     * @param context
-     * @param packageName 包名
-     * @return
-     * @throws NameNotFoundException 固件中未找到对应的包名
+     * param context
+     * param packageName 包名
+     * return
+     * throws NameNotFoundException 固件中未找到对应的包名
      */
     public static PackageInfo getPackageInfo(Context context, String packageName)
             throws NameNotFoundException {
@@ -59,9 +59,9 @@ public class ObjectManager {
     /**
      * 获取包信息
      *
-     * @param context
-     * @return
-     * @throws NameNotFoundException 固件中未找到对应的包名
+     * param context
+     * return
+     * throws NameNotFoundException 固件中未找到对应的包名
      */
     public static PackageInfo getPackageInfo(Context context)
             throws NameNotFoundException {
@@ -71,10 +71,10 @@ public class ObjectManager {
     /**
      * 获取应用信息
      *
-     * @param context
-     * @param flags
-     * @return
-     * @throws NameNotFoundException 固件中未找到对应的包名
+     * param context
+     * param flags
+     * return
+     * throws NameNotFoundException 固件中未找到对应的包名
      */
     public static ApplicationInfo getApplicationInfo(Context context, int flags)
             throws NameNotFoundException {
@@ -87,8 +87,8 @@ public class ObjectManager {
     /**
      * 获取屏幕密度
      *
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static DisplayMetrics getDisplayMetrics(Context context) {
         DisplayMetrics dm = new DisplayMetrics();

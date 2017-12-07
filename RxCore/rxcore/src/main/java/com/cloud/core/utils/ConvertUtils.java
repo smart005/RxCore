@@ -37,7 +37,7 @@ public class ConvertUtils {
     /**
      * Bitmap 转 File 保存到StorageUtils.getImageDir指定目录下
      *
-     * @param btmap
+     * param btmap
      */
     public static File toFile(Bitmap btmap) {
         try {
@@ -54,9 +54,9 @@ public class ConvertUtils {
     /**
      * 数字Object对象转int型
      *
-     * @param obj          要转换的对象
-     * @param defaultvlaue 默认值
-     * @return
+     * param obj          要转换的对象
+     * param defaultvlaue 默认值
+     * return
      */
     public static int toInt(Object obj, int defaultvlaue) {
         int val = defaultvlaue;
@@ -78,8 +78,8 @@ public class ConvertUtils {
     /**
      * 数字Object对象转int型(默认值0)
      *
-     * @param obj 要转换的对象
-     * @return
+     * param obj 要转换的对象
+     * return
      */
     public static int toInt(Object obj) {
         return toInt(obj, 0);
@@ -92,9 +92,9 @@ public class ConvertUtils {
     /**
      * 数字Object对象转long型
      *
-     * @param obj          要转换的对象
-     * @param defaultvlaue 默认值
-     * @return
+     * param obj          要转换的对象
+     * param defaultvlaue 默认值
+     * return
      */
     public static long toLong(Object obj, int defaultvlaue) {
         long val = defaultvlaue;
@@ -116,8 +116,8 @@ public class ConvertUtils {
     /**
      * 数字Object对象转long型
      *
-     * @param obj 要转换的对象
-     * @return
+     * param obj 要转换的对象
+     * return
      */
     public static long toLong(Object obj) {
         return toLong(obj, 0);
@@ -126,9 +126,9 @@ public class ConvertUtils {
     /**
      * 数字Object对象转double型
      *
-     * @param obj          要转换的对象
-     * @param defaultvlaue 默认值
-     * @return
+     * param obj          要转换的对象
+     * param defaultvlaue 默认值
+     * return
      */
     public static double toDouble(Object obj, double defaultvlaue) {
         double val = defaultvlaue;
@@ -150,8 +150,8 @@ public class ConvertUtils {
     /**
      * 数字Object对象转double型(默认值1.0)
      *
-     * @param obj 要转换的对象
-     * @return
+     * param obj 要转换的对象
+     * return
      */
     public static double toDouble(Object obj) {
         return toDouble(obj, 1.0);
@@ -160,9 +160,9 @@ public class ConvertUtils {
     /**
      * 数字Object对象转float型
      *
-     * @param obj          要转换的对象
-     * @param defaultvlaue 默认值
-     * @return
+     * param obj          要转换的对象
+     * param defaultvlaue 默认值
+     * return
      */
     public static float toFloat(Object obj, float defaultvlaue) {
         float val = defaultvlaue;
@@ -184,8 +184,8 @@ public class ConvertUtils {
     /**
      * 数字Object对象转float型(默认值1.0)
      *
-     * @param obj 要转换的对象
-     * @return
+     * param obj 要转换的对象
+     * return
      */
     public static float toFloat(Object obj) {
         return toFloat(obj, 1);
@@ -194,9 +194,9 @@ public class ConvertUtils {
     /**
      * 资源图片转换到Bitmap图片
      *
-     * @param context
-     * @param resid
-     * @return
+     * param context
+     * param resid
+     * return
      */
     public static Bitmap toBitmap(Context context, int resid) {
         return BitmapFactory.decodeResource(context.getResources(), resid);
@@ -205,8 +205,8 @@ public class ConvertUtils {
     /**
      * Bitmap转换到字节数组
      *
-     * @param bitmap
-     * @return
+     * param bitmap
+     * return
      */
     public static byte[] toByteArray(Bitmap bitmap) {
         byte[] result = null;
@@ -225,8 +225,8 @@ public class ConvertUtils {
     /**
      * 转字符串
      *
-     * @param value
-     * @return
+     * param value
+     * return
      */
     public static String toString(Object value) {
         return value != null ? value.toString() : "";
@@ -235,9 +235,9 @@ public class ConvertUtils {
     /**
      * 转换时间至秒
      *
-     * @param saveTime 时间
-     * @param timeUnit 时间单位
-     * @return
+     * param saveTime 时间
+     * param timeUnit 时间单位
+     * return
      */
     public static int toSeconds(long saveTime, TimeUnit timeUnit) {
         int time = 0;
@@ -262,9 +262,9 @@ public class ConvertUtils {
     /**
      * 转换时间至毫秒
      *
-     * @param saveTime 时间
-     * @param timeUnit 时间单位
-     * @return
+     * param saveTime 时间
+     * param timeUnit 时间单位
+     * return
      */
     public static int toMilliseconds(long saveTime, TimeUnit timeUnit) {
         int time = 0;

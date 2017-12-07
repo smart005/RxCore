@@ -17,12 +17,12 @@ import com.lzy.okgo.request.GetRequest;
 import java.io.File;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/15
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/15
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class OkRxDownloadFileRequest implements BaseFileRequest {
     @Override

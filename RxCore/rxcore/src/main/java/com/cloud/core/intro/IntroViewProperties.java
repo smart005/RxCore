@@ -4,12 +4,12 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/6/12
- * @Description:基本属性
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/6/12
+ * Description:基本属性
+ * Modifier:
+ * ModifyContent:
  */
 public class IntroViewProperties {
 
@@ -43,7 +43,7 @@ public class IntroViewProperties {
     private int lastLineChars = 0;
 
     /**
-     * @return 获取文本大小(单位dp)
+     * return 获取文本大小(单位dp)
      */
     public int getTextSize() {
         return textSize;
@@ -52,14 +52,14 @@ public class IntroViewProperties {
     /**
      * 设置文本大小(单位dp)
      *
-     * @param textSize
+     * param textSize
      */
     public void setTextSize(int textSize) {
         this.textSize = textSize;
     }
 
     /**
-     * @return 获取文本颜色
+     * return 获取文本颜色
      */
     public ColorStateList getTextColor() {
         return textColor;
@@ -68,14 +68,14 @@ public class IntroViewProperties {
     /**
      * 设置文本颜色
      *
-     * @param textColor
+     * param textColor
      */
     public void setTextColor(ColorStateList textColor) {
         this.textColor = textColor;
     }
 
     /**
-     * @return 获取标记文本大小(单位dp)
+     * return 获取标记文本大小(单位dp)
      */
     public int getTagTextSize() {
         return tagTextSize;
@@ -84,14 +84,14 @@ public class IntroViewProperties {
     /**
      * 设置标记文本大小(单位dp)
      *
-     * @param tagTextSize
+     * param tagTextSize
      */
     public void setTagTextSize(int tagTextSize) {
         this.tagTextSize = tagTextSize;
     }
 
     /**
-     * @return 获取标记文本颜色
+     * return 获取标记文本颜色
      */
     public ColorStateList getTagTextColor() {
         return tagTextColor;
@@ -100,14 +100,14 @@ public class IntroViewProperties {
     /**
      * 设置标记文本颜色
      *
-     * @param tagTextColor
+     * param tagTextColor
      */
     public void setTagTextColor(ColorStateList tagTextColor) {
         this.tagTextColor = tagTextColor;
     }
 
     /**
-     * @return 获取视图行间距
+     * return 获取视图行间距
      */
     public float getViewLineSpacing() {
         return viewLineSpacing;
@@ -116,14 +116,14 @@ public class IntroViewProperties {
     /**
      * 设置视图行间距
      *
-     * @param viewLineSpacing
+     * param viewLineSpacing
      */
     public void setViewLineSpacing(float viewLineSpacing) {
         this.viewLineSpacing = viewLineSpacing;
     }
 
     /**
-     * @return 获取最多显示行数
+     * return 获取最多显示行数
      */
     public int getLines() {
         return lines;
@@ -132,14 +132,14 @@ public class IntroViewProperties {
     /**
      * 设置最多显示行数
      *
-     * @param lines
+     * param lines
      */
     public void setLines(int lines) {
         this.lines = lines;
     }
 
     /**
-     * @return 获取最后一行显示字数
+     * return 获取最后一行显示字数
      */
     public int getLastLineChars() {
         return lastLineChars;
@@ -148,7 +148,7 @@ public class IntroViewProperties {
     /**
      * 设置最后一行显示字数
      *
-     * @param lastLineChars
+     * param lastLineChars
      */
     public void setLastLineChars(int lastLineChars) {
         this.lastLineChars = lastLineChars;

@@ -1,8 +1,8 @@
 /**
- * @Title:  VersionUpdateInfo.java
- * @Description:
- * @author:  lijinghuan
- * @data:  2015年4月30日 下午3:47:23
+ * Title:  VersionUpdateInfo.java
+ * Description:
+ * author:  lijinghuan
+ * data:  2015年4月30日 下午3:47:23
  */
 package com.cloud.core.beans;
 

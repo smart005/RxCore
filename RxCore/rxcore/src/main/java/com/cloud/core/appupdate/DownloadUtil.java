@@ -57,7 +57,7 @@ public class DownloadUtil {
 		protected abstract void laterListener();
 
 		/**
-		 * @param 设置miusinfo
+		 * param 设置miusinfo
 		 */
 		public void setMiusinfo(InstanceUpdateServiceInfoEntity miusinfo) {
 			this.miusinfo = miusinfo;
@@ -77,7 +77,7 @@ public class DownloadUtil {
 
 		/**
 		 * 
-		 * @param iscompulsory
+		 * param iscompulsory
 		 *            true:强制更新;
 		 */
 		public void setCompulsoryUpdate(boolean iscompulsory) {
@@ -87,8 +87,8 @@ public class DownloadUtil {
 		/**
 		 * 是否强制更新
 		 * 
-		 * @return
-		 * @return boolean
+		 * return
+		 * return boolean
 		 */
 		public boolean getIsCompulsoryUpdate() {
 			return this.iscompulsoryupdate;
@@ -168,7 +168,7 @@ public class DownloadUtil {
 		}
 
 		/**
-		 * @param 设置miusinfo
+		 * param 设置miusinfo
 		 */
 		public void setMiusinfo(InstanceUpdateServiceInfoEntity miusinfo) {
 			this.miusinfo = miusinfo;
@@ -237,7 +237,7 @@ public class DownloadUtil {
 		}
 
 		/**
-		 * @param 设置miusinfo
+		 * param 设置miusinfo
 		 */
 		public void setMiusinfo(InstanceUpdateServiceInfoEntity miusinfo) {
 			this.miusinfo = miusinfo;

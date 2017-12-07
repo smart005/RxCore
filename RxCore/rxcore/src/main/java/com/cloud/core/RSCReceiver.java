@@ -9,7 +9,7 @@ import android.text.TextUtils;
 
 /**
  * 
- * @author lijinghuan
+ * author lijinghuan
  * 
  */
 public class RSCReceiver extends BroadcastReceiver {

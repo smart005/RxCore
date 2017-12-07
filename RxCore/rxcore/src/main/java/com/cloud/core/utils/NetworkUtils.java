@@ -1,8 +1,8 @@
 /**
- * @Title: NetworkUtils.java
- * @Description:
- * @author: lijinghuan
- * @data: 2015年4月30日 上午11:15:14
+ * Title: NetworkUtils.java
+ * Description:
+ * author: lijinghuan
+ * data: 2015年4月30日 上午11:15:14
  */
 package com.cloud.core.utils;
 
@@ -18,8 +18,8 @@ public class NetworkUtils {
     /**
      * 网络状态为DISCONNECTED DISCONNECTING SUSPENDED UNKNOWN均表示存在可用网络但未连接
      *
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static boolean hasAvailable(Context context) {
         ConnectivityManager netconnMgr = (ConnectivityManager) context
@@ -48,7 +48,7 @@ public class NetworkUtils {
     /**
      * function: 检查网络是否成功连接
      *
-     * @return true: 网络是否已连接成功，并且已建立连接和传递数据 false: 网络未连接成功
+     * return true: 网络是否已连接成功，并且已建立连接和传递数据 false: 网络未连接成功
      */
     public static boolean isConnected(Context context) {
         ConnectivityManager netconnMgr = (ConnectivityManager) context
@@ -79,8 +79,8 @@ public class NetworkUtils {
     /**
      * 获取网络连接类型:-1未连接;1:wifi;2,3:移动网络;
      *
-     * @param context
-     * @return
+     * param context
+     * return
      */
     public static List<Integer> getAPNType(Context context) {
         List<Integer> netTypes = new ArrayList<Integer>();

@@ -6,19 +6,19 @@ import android.os.StatFs;
 import java.io.File;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2015-9-6 下午2:29:45
- * @Description: SDCard工具类
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2015-9-6 下午2:29:45
+ * Description: SDCard工具类
+ * Modifier:
+ * ModifyContent:
  */
 public class SDCardUtils {
 
     /**
      * 获取SDCard状态
      *
-     * @return
+     * return
      */
     public static String getSDCardsStatus() {
         return Environment.getExternalStorageState();
@@ -27,7 +27,7 @@ public class SDCardUtils {
     /**
      * 判断SDCard是否可用
      *
-     * @return
+     * return
      */
     public static boolean hasSdcard() {
         return getSDCardsStatus().equals(Environment.MEDIA_MOUNTED);
@@ -36,7 +36,7 @@ public class SDCardUtils {
     /**
      * 获取SDCard目录
      *
-     * @return
+     * return
      */
     public static File getSDCardFile() {
         return Environment.getExternalStorageDirectory();
@@ -45,7 +45,7 @@ public class SDCardUtils {
     /**
      * 获取SD卡路径
      *
-     * @return
+     * return
      */
     public static String getSDCardPath() {
         return getSDCardFile().getAbsolutePath() + File.separator;
@@ -54,7 +54,7 @@ public class SDCardUtils {
     /**
      * 获取SD卡的剩余容量 单位byte
      *
-     * @return
+     * return
      */
     public static long getSDCardAllSize() {
         if (hasSdcard()) {
@@ -71,8 +71,8 @@ public class SDCardUtils {
     /**
      * 获取指定路径所在空间的剩余可用容量字节数，单位byte
      *
-     * @param filePath
-     * @return 容量字节 SDCard可用空间，内部存储可用空间
+     * param filePath
+     * return 容量字节 SDCard可用空间，内部存储可用空间
      */
     public static long getFreeBytes(String filePath) {
         // 如果是sd卡的下的路径，则获取sd卡可用容量
@@ -90,7 +90,7 @@ public class SDCardUtils {
     /**
      * 获取系统存储路径
      *
-     * @return
+     * return
      */
     public static String getRootDirectoryPath() {
         return getSDCardFile().getAbsolutePath();

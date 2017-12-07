@@ -21,12 +21,12 @@ import com.lzy.okgo.request.PutRequest;
 import java.util.HashMap;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2017/11/15
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2017/11/15
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class OkRxPutRequest implements BaseRequest {
 

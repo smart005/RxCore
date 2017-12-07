@@ -12,12 +12,12 @@ import android.widget.TextView;
 import com.cloud.core.logger.Logger;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/9/10
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/9/10
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 public class TextIndentation extends TextView {
 
@@ -37,7 +37,7 @@ public class TextIndentation extends TextView {
     /**
      * 设置是否首行缩进
      *
-     * @param firstLineIndentation
+     * param firstLineIndentation
      */
     public void setFirstLineIndentation(boolean firstLineIndentation) {
         this.firstLineIndentation = firstLineIndentation;
@@ -46,7 +46,7 @@ public class TextIndentation extends TextView {
     /**
      * 设置文本内容
      *
-     * @param textContent
+     * param textContent
      */
     public void setTextContent(CharSequence textContent) {
         this.textContent = textContent;
@@ -75,7 +75,7 @@ public class TextIndentation extends TextView {
     /**
      * 获取文本内容
      *
-     * @param content
+     * param content
      */
     public SpannableStringBuilder buildContent() {
         SpannableStringBuilder ssb = new SpannableStringBuilder();

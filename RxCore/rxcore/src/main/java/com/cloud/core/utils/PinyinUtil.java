@@ -5,12 +5,12 @@ import android.text.TextUtils;
 import com.cloud.core.logger.Logger;
 
 /**
- * @Author lijinghuan
- * @Email:ljh0576123@163.com
- * @CreateTime:2016/11/15
- * @Description:
- * @Modifier:
- * @ModifyContent:
+ * Author lijinghuan
+ * Email:ljh0576123@163.com
+ * CreateTime:2016/11/15
+ * Description:
+ * Modifier:
+ * ModifyContent:
  */
 
 public class PinyinUtil {
@@ -18,8 +18,8 @@ public class PinyinUtil {
     /**
      * 取得给定所有汉字首字母,即声母
      *
-     * @param str 给定汉字串
-     * @return 声母串
+     * param str 给定汉字串
+     * return 声母串
      */
     public String getAllChineseFirstLetter(String str) {
         try {
@@ -40,8 +40,8 @@ public class PinyinUtil {
     /**
      * 取得给定汉字的首字母,即声母
      *
-     * @param chinese 给定的汉字
-     * @return 给定汉字的声母
+     * param chinese 给定的汉字
+     * return 给定汉字的声母
      */
     public String getChineseFirstLetter(String chinese) {
         try {
