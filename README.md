@@ -22,6 +22,7 @@ android项目开发基础框架：
 
 ### 2.功能使用文档
 * [ToastUtils工具类](/docs/toast_doc.md)
+  * [样式配置](/docs/toast_theme_config.md)
 * [文件操作](/docs/file_operation.md)
 * [框架中greendao数据库使用](/docs/db_use.md)
 * [OkRx网络框架]
